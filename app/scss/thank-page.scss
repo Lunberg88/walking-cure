@@ -1,0 +1,295 @@
+
+.thy-header {
+  margin-bottom: 0;
+}
+
+.hero-section {
+  padding: 60px 0;
+  background: url('../assets/img/main-bg-thy.png') no-repeat center;
+  background-size: cover;
+
+  .logo {
+    margin-bottom: 50px;
+  }
+  .th-sub-title {
+    color: #1792a2;
+    font-family: "ArialNarrowRegular", sans-serif;
+    font-size: 41px;
+    font-weight: 400;
+  }
+
+  .th-title {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 15px 0;
+    background-color: #c23552;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans" , sans-serif;
+    font-size: 53px;
+    font-weight: 700;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 102px;
+      height: 55px;
+      top: -55px;
+      left: 0;
+      background: url('../assets/img/rectangle-thy.svg') no-repeat;
+    }
+
+  }
+
+
+  .link-logo__img {
+    width: 196px;
+    height: 186px;
+    max-width: 100%;
+  }
+
+  .hero-title-block {
+    padding: 60px;
+    width: 45%;
+    float: left;
+    background: url('../assets/img/hero-title-bg-thy.png') no-repeat center;
+    background-size: contain;
+    text-align: center;
+  }
+
+  .hero-title {
+    display: block;
+    color: #ff7900;
+    font-family: "Open Sans", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  .hero-sub-title {
+    display: block;
+    color: #ff7900;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+
+}
+.thy-timer {
+  width: 55%;
+  float: right;
+  margin-bottom: 25px;
+  color: #2f313e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+
+  .timer-desc {
+    color: #2f313e;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+}
+
+.how-start {
+  text-align: center;
+  padding-bottom: 60px;
+
+  .section__title {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin-bottom: 70px;
+    color: #c23552;
+    font-family: "Open Sans", sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 129px;
+      height: 69px;
+      top: 50%;
+      right: -130px;
+      background: url('../assets/img/arrow-thy.png') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .video-block {
+    width: 90%;
+    margin: 0 auto;
+
+
+    &::after {
+      display: none;
+    }
+
+    .video {
+      margin: 0;
+      box-shadow: -3px 4px 10px rgba(1, 1, 0, .4);
+
+    }
+  }
+
+}
+
+.member {
+  padding: 50px 0 60px 0;
+  background: #2c2e3c;
+  text-align: center;
+
+  .inner-section {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .member__title {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 53px;
+    line-height: 32px;
+    font-weight: 400;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .member__list {
+    display: block;
+    padding-left: 0;
+    list-style: none;
+
+    .list-member__item {
+      position: relative;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 45px;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        left: -20px;
+        width: 10px;
+        height: 10px;
+        background-color: #1792a2;
+        border-radius: 50%;
+      }
+
+    }
+  }
+}
+
+.thy-main {
+
+  .day-10 {
+    padding: 50px 0 60px 0;
+  }
+
+  .section-bg {
+    background: url('../assets/img/section-bg-thy.jpg') no-repeat center;
+  }
+
+}
+
+.day-10-title {
+  display: block;
+  margin-bottom: 15px;
+  color: #c23552;
+  font-family: "Open Sans", sans-serif;
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 79px;
+  text-align: center;
+}
+
+.day-10-list {
+  padding-left: 0;
+  list-style: none;
+  vertical-align: top;
+  
+  .day-10-list-item {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    width: 40%;
+    margin-right: 70px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 29px;
+      top: -5px;
+      left: -35px;
+      background: url('../assets/img/check-thy.png') no-repeat center;
+    }
+  }
+  .day-10-list-item:nth-child(2n) {
+    clear: both;
+  }
+
+}
+
+.day-10-under-text {
+  color: #2f313e;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+
+.refer {
+  padding: 45px 0 60px;
+  background: #1e93a2;
+  
+  .refer-title {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 32px;
+
+  }
+  .refer-btn {
+    display: block;
+    padding: 30px 0 20px;
+    color: #ffffff;
+    width: 640px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #d84f6b;
+    border-bottom: 17px solid #b63852;
+    transition: all .15s ease;
+
+    &:hover {
+      text-decoration: none;
+      background: darken(#d84f6b, 5%);
+      cursor: pointer;
+    }
+  }
+}

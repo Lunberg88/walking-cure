@@ -1,0 +1,15 @@
+{
+  "name": "walkingcure",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vasya Ponomarenko"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "jquery.maskedinput": "^1.4.1",
+    "bootstrap": "^3.3.7",
+    "slick-carousel": "^1.6.0"
+  }
+}

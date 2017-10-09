@@ -1,0 +1,80 @@
+.profile-content {
+  width: 100%;
+  margin: auto; }
+  .profile-content .profile-left-col {
+    margin-bottom: 100px;
+    background-color: #f3f3f3;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #d7d7d7; }
+  .profile-content .profile-right-col {
+    width: 90%;
+    margin-left: 20px;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 8px 16px; }
+    .profile-content .profile-right-col .profile-right-box {
+      padding: 10px 0px 15px 0px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #d7d7d7; }
+    .profile-content .profile-right-col .user-videos {
+      border-bottom: none; }
+    .profile-content .profile-right-col .box_title {
+      padding-bottom: 10px;
+      padding-top: 10px; }
+      .profile-content .profile-right-col .box_title .title_desc {
+        font-weight: bold;
+        font-size: 13px;
+        float: left;
+        font-family: 'Open Sans', Arial; }
+      .profile-content .profile-right-col .box_title .title_link {
+        float: right;
+        color: #1e93a2;
+        font-size: 12px;
+        font-family: 'Open Sans', Arial; }
+    .profile-content .profile-right-col .box-content {
+      padding: 0px 10px;
+      font-family: 'Open Sans', Arial;
+      font-size: 14px;
+      color: #2f313e; }
+      .profile-content .profile-right-col .box-content .user_gal {
+        width: 320px;
+        height: 150px;
+        object-fit: cover;
+        padding-bottom: 20px; }
+      .profile-content .profile-right-col .box-content .user_video {
+        padding: 0px;
+        object-fit: cover; }
+      .profile-content .profile-right-col .box-content .box_text {
+        display: inline-block;
+        padding: 4px 5px; }
+      .profile-content .profile-right-col .box-content .box_friend_ava {
+        width: 80px;
+        height: 50px;
+        object-fit: cover; }
+      .profile-content .profile-right-col .box-content .box_ava {
+        margin: auto;
+        padding: 6px; }
+    .profile-content .profile-right-col .gal {
+      padding: 0px !important; }
+    .profile-content .profile-right-col .profile-content {
+      font-size: 12px;
+      color: #2f313e;
+      padding: 3px 5px; }
+  .profile-content .copyrights {
+    padding-top: 25px;
+    margin: 15px 10px;
+    color: #a1a1a1;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 8px; }
+    .profile-content .copyrights p {
+      padding-left: 10px; }
+    .profile-content .copyrights ul {
+      list-style: none;
+      padding-left: 10px; }
+      .profile-content .copyrights ul li {
+        display: inline-block; }
+        .profile-content .copyrights ul li:after {
+          content: '.'; }
+        .profile-content .copyrights ul li:last-child:after {
+          content: ''; }

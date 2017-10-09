@@ -1,0 +1,63 @@
+/* Footer */
+@import "mixin";
+.footer {
+    font-family: 'MyriadProRegular', sans-serif;
+    padding: rem(60) 0;
+    background: #f7f7f7;
+    color: #1792a2;
+    width: 100%;
+
+    .footer__logo {
+        margin-bottom: rem(40);
+        margin-left: rem(30);
+
+        img {
+            width: rem(97);
+            height: rem(94);
+        }
+    }
+
+    .social__block {
+        &::after {
+            display: none;
+        }
+        .social-btn {
+            background: #1792a2;
+
+            .fa {
+                color: #fff;
+            }
+
+            &:hover {
+                background: #d84f6b;
+            }
+        }
+    }
+}
+.footer-center-list {
+    list-style: none;
+    font-size: rem(16);
+    line-height: rem(16);
+
+    li {
+        margin-bottom: rem(20);
+        font-family: 'MyriadProSemiBold', sans-serif;
+        text-transform: uppercase;
+        a {
+            color: #1792a2;
+        }
+    }
+}
+.footer-right-list {
+    list-style: none;
+    font-size: rem(16);
+    line-height: rem(16);
+    li {
+        margin-bottom: rem(20);
+
+        a {
+            color: #1792a2;
+            font-family: 'MyriadProSemiBold', sans-serif;
+        }
+    }
+}

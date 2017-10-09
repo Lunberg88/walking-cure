@@ -1,0 +1,40 @@
+$baseFontSize : 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+@mixin tr($time) {
+  transition: all $time + s ease;
+}
+
+@mixin media($px) {
+  @media (max-width: $px) {
+    @content
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: 1199px) {
+    @content
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 767px) {
+    @content
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 420px) {
+    @content
+  }
+}

@@ -1,0 +1,31 @@
+@import "mixin";
+/* Main header */
+.main {
+    padding-top: 0px;
+  .header {
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+      background: #1e93a2;
+      display: inline-flex;
+      align-items: center;
+
+      .container {
+          padding: 0;
+      }
+  }
+
+    .logo {
+        display: inline-block;
+        img {
+            height: rem(91);
+        }
+    }
+}
+
+.header__registration {
+    .top__panel {
+        padding: rem(12);
+    }
+}

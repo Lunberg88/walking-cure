@@ -1,0 +1,38 @@
+@import "mixin";
+@import "font";
+@import "vars";
+@import "fonts";
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: $gray;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+@import "top-menu";
+@import "header";
+@import "profile";
+@import "group-profile";
+@import "group-registration";
+@import "main-page-content";
+@import "account";
+//@import "registration";
+@import "footer";
+
+.light-bordo {
+  color: $light-bordo;
+}

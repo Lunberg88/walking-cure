@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+<body class="main">
+<div class="wrapper">
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <!-- Top panel -->
+                <div class="top__panel">
+
+                    <!--Site brand-->
+                    <a class="site__brand" href="/">Walking Cure</a>
+
+                    <!-- Top nav -->
+                    <ul class="menu">
+                        <li class="menu__item active">
+                            <a href="#" class="menu__item-link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Forum</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Tutorial</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Contacts</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Store</a>
+                        </li>
+                    </ul>
+
+                    <!--Social button, Auth and Register links-->
+                    <div class="top_right_menu">
+                        <div class="social__block">
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/comment-user-ac.jpg" alt="" class="nav-profile-ava">
+                                <!--<i class="fa fa-facebook" aria-hidden="true">AS</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/1.png" alt="">
+                                <!--<i class="fa fa-youtube-play" aria-hidden="true">SA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/2.png" alt="">
+                                <!--<i class="fa fa-instagram" aria-hidden="true">VA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/3.png" alt="">
+                                <!--<i class="fa fa-twitter" aria-hidden="true">FD</i>-->
+                            </a>
+                        </div>
+                        <div class="auth__register-block">
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+
+                </div> <!-- end top panel -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="forum-logo-section">
+            <div class="container">
+                <!--Logo-->
+                <div class="row">
+                    <a href="/" class="logo">
+                        <img src="assets/img/logo.png" class="forum-logo" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Forum search -->
+        <section class="forum_search_box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form action="/" method="get" class="forum_search_form">
+                            <input type="text" name="search" class="forum_search" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End search//-->
+
+        <!-- Forum links & buttons -->
+        <section class="forum_links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="row">
+                            <div class="forum_link">
+                                <div class="col-xs-2">
+                                   <span>Forum Ruls</span>
+                                </div>
+                                <div class="col-xs-10">
+                                    <a href="#" class="ghost-button-rounded-corners danger">Terms and Condition</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="forum_link">
+                                <div class="col-xs-2">
+                                    <span>Make a post</span>
+                                </div>
+                                <div class="col-xs-10">
+                                    <a href="#" class="ghost-button-rounded-corners danger">Create new</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="forum_link">
+                                <div class="col-xs-2">
+                                    <span>Need Help?</span>
+                                </div>
+                                <div class="col-xs-10">
+                                    <a href="#" class="ghost-button-rounded-corners danger">Ask an admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="row">
+                            <div class="scroll_box">
+                                <div class="scroll_title"><span>Recent Posts</span></div>
+                                <div class="scroll_content">
+                                    <!-- calendar -->
+                                    <span class="s_date">Date: Today</span>
+                                    <hr class="forum_hr_dates" />
+                                    <span class="scroll_dates">
+                                        <p class="inactive">7/31/17</p>
+                                        <p>7/30/17</p>
+                                        <p class="active">7/29/17</p>
+                                        <p>7/28/17</p>
+                                        <p class="inactive">7/27/17</p>
+                                    </span>
+                                    <!-- //end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End //-->
+
+        <!-- Forum content -->
+        <section class="forum_posts_headlines">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="forum_posts">
+                            <div class="topic_starter">
+                                <div class="post_box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="forum_user_name">
+                                            <img src="assets/img/video_page/older_women_ava3.jpg" alt="avatar" class="forum_avatar">
+                                            <p class="avatar_name">Arthur @name</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <div class="forum_user_post">
+                                            <h4 class="topic_head"><a href="#read-topic">TOPIC QUESTION</a></h4>
+                                            <p class="topic_body">I'm a newbie to the decade(turned 40 a week ago) but would love to connect with gals my own age who are ready to start the program! About me: i'm a fulltime working to a sweet 3yo girl. I live in a suburb of Minneapolis, Minnesota with her my husband and my mother(who also is my dauther's nanny)</p>
+                                            <p class="topic_date">july 31st, 2017</p>
+                                        </div>
+                                        <div class="topic_options_read">
+                                            <ul>
+                                                <li>
+                                                    <a href="#like">
+                                                        <i class="icon icon-like"></i>
+                                                        <span class="f_icons">
+                                                        Like:
+                                                        </span> 43
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#comments">
+                                                        <i class="icon icon-comment"></i>
+                                                        <span class="f_icons">
+                                                            Comments:
+                                                        </span> 12
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="fr_right">
+                                            <ul class="forum_reply">
+                                                <li>
+                                                    <a href="#" class="thead_reply">
+                                                        <i class="icon icon-arrow"></i>
+                                                        Reply
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="reply_topic_box">
+                                <div class="post_box">
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <div class="forum_user_name">
+                                                <img src="assets/img/video_page/older_women_ava2.jpg" alt="avatar" class="forum_avatar">
+                                                <p class="avatar_name">Arthur @name</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="forum_user_post">
+                                                <h4 class="topic_head"><a href="#read-topic">TOPIC QUESTION</a></h4>
+                                                <p class="topic_body" id="reply_form">
+                                                    <i class="icon icon-smile"></i>
+                                                    <textarea name="comment" cols="30" rows="1" class="comment_reply" placeholder="Comment..."></textarea>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post_box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="forum_user_name">
+                                            <img src="assets/img/video_page/older_women_ava2.jpg" alt="avatar" class="forum_avatar">
+                                            <p class="avatar_name">Arthur @name</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <div class="forum_user_post">
+                                            <h4 class="topic_head"><a href="#read-topic">TOPIC QUESTION</a></h4>
+                                            <p class="topic_body">I'm a newbie to the decade(turned 40 a week ago) but would love to connect with gals my own age who are ready to start the program! About me: i'm a fulltime working to a sweet 3yo girl. I live in a suburb of Minneapolis, Minnesota with her my husband and my mother(who also is my dauther's nanny)</p>
+                                            <p class="topic_date">july 31st, 2017</p>
+                                        </div>
+                                        <div class="topic_options_read">
+                                            <ul>
+                                                <li>
+                                                    <a href="#like">
+                                                        <i class="icon icon-like"></i>
+                                                        <span class="f_icons">
+                                                        Like:
+                                                        </span> 11
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#comments">
+                                                    <i class="icon icon-comment"></i>
+                                                        <span class="f_icons">
+                                                            Comments:
+                                                        </span> 0
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="topic_reply">
+                                                        <i class="icon icon-arrow"></i>&nbsp;Reply
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="forum_user_name">
+                                            <img src="assets/img/video_page/older_women_ava3.jpg" alt="avatar" class="forum_avatar">
+                                            <p class="avatar_name">Arthur @name</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <div class="forum_user_post">
+                                            <h4 class="topic_head"><a href="#read-topic">TOPIC QUESTION</a></h4>
+                                            <p class="topic_body">I'm a newbie to the decade(turned 40 a week ago) but would love to connect with gals my own age who are ready to start the program! About me: i'm a fulltime working to a sweet 3yo girl. I live in a suburb of Minneapolis, Minnesota with her my husband and my mother(who also is my dauther's nanny)</p>
+                                            <p class="topic_date">july 31st, 2017</p>
+                                        </div>
+                                        <div class="topic_options_read">
+                                            <ul>
+                                                <li>
+                                                    <a href="#like">
+                                                        <i class="icon icon-like"></i>
+                                                        <span class="f_icons">
+                                                        Like:
+                                                        </span> 52
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#comments">
+                                                    <i class="icon icon-comment"></i>
+                                                        <span class="f_icons">
+                                                            Comments:
+                                                        </span> 21
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="topic_reply">
+                                                        <i class="icon icon-arrow"></i>&nbsp;Reply
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="forum_user_name">
+                                            <img src="assets/img/video_page/older_women_ava1.jpg" alt="avatar" class="forum_avatar">
+                                            <p class="avatar_name">Arthur @name</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <div class="forum_user_post">
+                                            <h4 class="topic_head"><a href="#read-topic">TOPIC QUESTION</a></h4>
+                                            <p class="topic_body">I'm a newbie to the decade(turned 40 a week ago) but would love to connect with gals my own age who are ready to start the program! About me: i'm a fulltime working to a sweet 3yo girl. I live in a suburb of Minneapolis, Minnesota with her my husband and my mother(who also is my dauther's nanny)</p>
+                                            <p class="topic_date">july 31st, 2017</p>
+                                        </div>
+                                        <div class="topic_options_read">
+                                            <ul>
+                                                <li>
+                                                    <a href="#like">
+                                                        <i class="icon icon-like"></i>
+                                                        <span class="f_icons">
+                                                        Like:
+                                                        </span> 91
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#comments">
+                                                    <i class="icon icon-comment"></i>
+                                                        <span class="f_icons">
+                                                            Comments:
+                                                        </span> 32
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="topic_reply">
+                                                        <i class="icon icon-arrow"></i>&nbsp;Reply
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post_box">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="forum_user_name">
+                                            <img src="assets/img/video_page/older_women_ava3.jpg" alt="avatar" class="forum_avatar">
+                                            <p class="avatar_name">Arthur @name</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <div class="forum_user_post">
+                                            <h4 class="topic_head"><a href="#read-topic">TOPIC QUESTION</a></h4>
+                                            <p class="topic_body">I'm a newbie to the decade(turned 40 a week ago) but would love to connect with gals my own age who are ready to start the program! About me: i'm a fulltime working to a sweet 3yo girl. I live in a suburb of Minneapolis, Minnesota with her my husband and my mother(who also is my dauther's nanny)</p>
+                                            <p class="topic_date">july 31st, 2017</p>
+                                        </div>
+                                        <div class="topic_options_read">
+                                            <ul>
+                                                <li>
+                                                    <a href="#like">
+                                                        <i class="icon icon-like"></i>
+                                                        <span class="f_icons">
+                                                        Like:
+                                                        </span> 108
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#comments">
+                                                    <i class="icon icon-comment"></i>
+                                                        <span class="f_icons">
+                                                            Comments:
+                                                        </span> 4
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="topic_reply">
+                                                        <i class="icon icon-arrow"></i>&nbsp;Reply
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                            <div class="pagination">
+                                <div class="pages">
+                                    <a href="#" class="link_page"><</a>
+                                    <a href="#" class="link_page">1</a>
+                                    <a href="#" class="link_page">2</a>
+                                    <a href="#" class="active_page">3</a>
+                                    <a href="#" class="link_page">4</a>
+                                    <a href="#" class="link_page">5</a>
+                                    <a href="#" class="link_page">></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End //-->
+    </main> <!-- End main -->
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="footer__logo">
+                        <img src="assets/img/main/top-logo.png" alt="">
+                    </div>
+                    <div class="social__block">
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-center-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">EBOOKS</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-right-list">
+                        <li><a href="#">Need help?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</div> <!--end wrapper-->
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!--<script>
+    $('#ca').calendar({
+        // view: 'month',
+        //width: 320,
+        height: 170,
+        // startWeek: 0,
+        // selectedRang: [new Date(), null],
+        data: [
+            {
+                date: '2015/12/24',
+                value: 'Christmas Eve'
+            },
+            {
+                date: '2015/12/25',
+                value: 'Merry Christmas'
+            },
+            {
+                date: '2016/01/01',
+                value: 'Happy New Year'
+            }
+        ],
+        onSelected: function (view, date, data) {
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+</script>-->
+<!-- endbuild -->
+</body>
+</html>

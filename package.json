@@ -1,0 +1,19 @@
+{
+  "name": "walkingcure",
+  "version": "1.0.0",
+  "author": "Vasya Ponomarenko",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-if": "^2.0.1",
+    "gulp-pixrem": "^1.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.1.0",
+    "wiredep": "^4.0.0"
+  }
+}

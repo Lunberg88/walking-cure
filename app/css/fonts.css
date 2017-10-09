@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../assets/fonts/icon_photo_view.eot?peu3ju");
+  src: url("../assets/fonts/icon_photo_view.eot?peu3ju#iefix") format("embedded-opentype"), url("../assets/fonts/icon_photo_view.ttf?peu3ju") format("truetype"), url("../assets/fonts/icon_photo_view.woff?peu3ju") format("woff"), url("../assets/fonts/icon_photo_view.svg?peu3ju#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow:before {
+  content: "\e900"; }
+
+.icon-camera:before {
+  content: "\e901"; }
+
+.icon-comment:before {
+  content: "\e902"; }
+
+.icon-dotted:before {
+  content: "\e903"; }
+
+.icon-exit:before {
+  content: "\e904"; }
+
+.icon-full:before {
+  content: "\e905"; }
+
+.icon-like:before {
+  content: "\e906"; }
+
+.icon-smile:before {
+  content: "\e907"; }
