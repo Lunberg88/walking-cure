@@ -34,7 +34,7 @@ gulp.task('bower', function () {
 
 //=========Перемешение наших локальных файлов в папку dist ===== //
 gulp.task('fonts', function() {
-	return gulp.src('./app/assets/fonts/**/*.*')
+	return gulp.src(['./app/assets/fonts/**/*.*', './app/bower_components/font-awesome/css/*.css'])
 		.pipe(gulp.dest('./dist/assets/fonts'));
 });
 
@@ -59,7 +59,7 @@ gulp.task('sass', function() {
 });
 
 //==================BUILD==================
-gulp.task('build', ['clean', 'tinypng'], function () {
+gulp.task('build', ['clean', 'tinypng', 'fonts'], function () {
 	return gulp.src('app/*.html')
 		.pipe(useref())
 		.pipe(gulpif('*.js', uglify()))

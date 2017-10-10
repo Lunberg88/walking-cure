@@ -22,17 +22,15 @@ img {
   max-width: 100%;
 }
 
-
 @import "top-menu";
 @import "header";
 @import "profile";
 @import "group-profile";
-@import "group-registration";
 @import "main-page-content";
 @import "account";
-//@import "registration";
 @import "footer";
 
 .light-bordo {
   color: $light-bordo;
 }
+
