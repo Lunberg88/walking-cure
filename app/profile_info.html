@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile info</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+<body class="main">
+<div class="wrapper">
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <!-- Top panel -->
+                <div class="top__panel">
+
+                    <!--Site brand-->
+                    <a class="site__brand" href="/">Walking Cure</a>
+
+                    <!-- Search form -->
+                    <form action="" method="get" class="search_box">
+                        <input type="text" class="header_search" name="search" class="form-control" placeholder="Search">
+                    </form>
+                    <!-- //End search -->
+
+                    <!-- Top nav -->
+                    <ul class="menu">
+                        <li class="menu__item active">
+                            <a href="#" class="menu__item-link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Forum</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Tutorial</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Contacts</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Store</a>
+                        </li>
+                    </ul>
+
+                    <!--Social button, Auth and Register links-->
+                    <div class="top_right_menu">
+                        <div class="social__block">
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/comment-user-ac.jpg" alt="" class="nav-profile-ava">
+                                <!--<i class="fa fa-facebook" aria-hidden="true">AS</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/1.png" alt="">
+                                <!--<i class="fa fa-youtube-play" aria-hidden="true">SA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/2.png" alt="">
+                                <!--<i class="fa fa-instagram" aria-hidden="true">VA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/3.png" alt="">
+                                <!--<i class="fa fa-twitter" aria-hidden="true">FD</i>-->
+                            </a>
+                        </div>
+                        <div class="auth__register-block">
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+
+                </div> <!-- end top panel -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="account-main">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12 col-xs-12">
+
+                    <!-- Account top block -->
+                    <div class="account-top-wrap-dark clearfix">
+                        <!-- Account top-left block -->
+                        <div class="col-sm-7 col-xs-12">
+                            <div class="account-top__left">
+
+                                <div class="row" style="display: flex;">
+                                    <!-- Main avatar -->
+                                    <div class="col-xs-5">
+                                        <div class="avatar-view">
+                                            <img class="avatar__img" src="assets/img/avatar.png" alt="avatar">
+                                        </div>
+                                    </div> <!-- end main avatar -->
+                                    <!-- User name -->
+                                    <div class="col-xs-7">
+                                        <div class="user-name__block">
+                                            <h4 class="user__name">Vanessa</h4>
+                                        </div>
+                                    </div> <!-- end user name -->
+                                </div>
+
+                            </div>
+                        </div> <!-- end account top-left block -->
+
+                        <!-- Account top-right block -->
+                        <div class="col-sm-5 col-xs-12 clearfix">
+                            <div class="calendar-day-dark">
+                                <span>june 12, 2017</span>
+                            </div>
+                        </div> <!-- end Account top-right block -->
+
+                        <div class="account-top__right pull-right">
+
+                            <!-- Charts block -->
+                            <div class="charts-block clearfix">
+
+                                <!-- Chart item -->
+                                <div class="chart col-sm-6 col-xs-6">
+                                    <span class="chart__title">Task <span id="percent_count"></span>% completed</span>
+                                    <div class="chart__body">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle r="25" cx="50" cy="50" class="pie" id="pie"/>
+                                        </svg>
+                                    </div>
+                                    <input type="hidden" min="0" max="100" value="20" id="utilslider">
+
+                                </div> <!-- end chart item -->
+
+                                <!-- Chart item -->
+                                <div class="chart col-sm-6 col-xs-6">
+                                    <span class="chart__title">
+                                        <span id="point_count"></span> points
+                                    </span>
+                                    <div class="chart__body">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle r="25" cx="50" cy="50" class="pie" id="pie2"/>
+                                        </svg>
+                                    </div>
+                                    <input type="hidden" min="0" max="100" value="50" id="utilslider2">
+                                </div> <!-- end chart item -->
+
+                            </div> <!-- end charts block -->
+
+                            <div class="date-now__wrap">
+                                <span class="date-now">June 12, 2017</span>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- end account top block -->
+
+                    <!-- Account menu block -->
+                    <div class="clearfix account-menu__wrap">
+                        <ul class="account-menu">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">My daily task</a>
+                                <div class="new_notice">3</div>
+                            </li>
+                            <li class="menu__item menu__item--active"><a href="#" class="menu__link">My profile</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My activity</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My goals</a></li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">My team</a>
+                                <div class="new_notice">3</div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">My competition</a>
+                                <div class="new_notice">3</div>
+                            </li>
+                        </ul>
+                    </div><!-- end account menu block -->
+
+                    <section class="profile_info-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="profile_info_page">
+                                    <div class="page_header">
+                                        <h1>About Me</h1>
+                                    </div>
+                                    <div class="col-xs-12 page_info_1">
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-5 data_title">Name:</div>
+                                            <div class="col-xs-5 data">Vanessa Tolochko</div>
+                                            <div class="col-xs-1 action">edit</div>
+                                            <div class="col-xs-1 pablicity">Public</div>
+                                        </div>
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-5 data_title">Date of birth:</div>
+                                            <div class="col-xs-5 data">April, 9 1997</div>
+                                            <div class="col-xs-1 action">edit</div>
+                                            <div class="col-xs-1 pablicity">Private</div>
+                                        </div>
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-3 title">What Do I Do for a Living? <p class="small">(Example: doctor, swim instructor, etc.)</p></div>
+                                            <div class="col-xs-7 data">
+                                                <input class="form_input" name="work" type="text" placeholder="Doctor">
+                                            </div>
+                                            <div class="col-xs-1 action">edit</div>
+                                            <div class="col-xs-1 pablicity">Public</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 page_info_2">
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-3 title">Where did I go to School?</div>
+                                            <div class="col-xs-7 data">
+                                                <input class="form_input" name="work" type="text" placeholder="">
+                                            </div>
+                                            <div class="col-xs-1 action"></div>
+                                            <div class="col-xs-1 pablicity">Public</div>
+                                        </div>
+                                        <div class="col-xs-12 form_row" style="margin-top:10px">
+                                            <div class="col-xs-3"></div><div class="col-xs-7">
+                                                <p class="input_notice">Make sure that you do not add unnecessary capital letters, punctuation marks, symbols or random words</p>
+                                            </div>
+                                            <div class="col-xs-1"></div><div class="col-xs-1"></div>
+                                        </div>
+                                        <div class="col-xs-12 form_row" style="margin-top:10px">
+                                            <div class="col-xs-3"></div><div class="col-xs-7">
+                                                <button class="btn btn-default edit_buton">Edit</button>
+                                                <button class="btn btn-default cancel_button">Cancel</button>
+                                            </div>
+                                            <div class="col-xs-1"></div><div class="col-xs-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 page_info_3">
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-3 title">What are your Interests? <p class="small">(Example: Skateboarding, Basketball, etc.)</p></div>
+                                            <div class="col-xs-7 data">
+                                                <input class="form_input" name="work" type="text" placeholder="Skateboarding">
+                                            </div>
+                                            <div class="col-xs-1 action">edit</div>
+                                            <div class="col-xs-1 pablicity">Public</div>
+                                        </div>
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-3 title">Tell us about your health problems:</div>
+                                            <div class="col-xs-7 data">
+                                                <div class="col-xs-12 col-md-6">
+                                                    <input type="checkbox" id="diabetes" name="health[]" value="diabetes"><label for="diabetes"><i class="fa fa-check health_check" aria-hidden="true"></i> diabetes</label><br>
+                                                    <input type="checkbox" id="hypertension" name="health[]" value="hypertension"><label for="hypertension"><i class="fa fa-check health_check" aria-hidden="true"></i> hypertension</label><br>
+                                                    <input type="checkbox" id="obesity" name="health[]" value="obesity"><label for="obesity"><i class="fa fa-check health_check" aria-hidden="true"></i> obesity</label><br>
+                                                    <input type="checkbox" id="depression" name="health[]" value="depression"><label for="depression"><i class="fa fa-check health_check" aria-hidden="true"></i> depression</label><br>
+                                                    <input type="checkbox" id="emotional_trauma" name="health[]" value="emotional_trauma"><label for="emotional_trauma"><i class="fa fa-check health_check" aria-hidden="true"></i> emotional trauma</label><br>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <input type="checkbox" id="spiritual_misalignment" name="health[]" value="spiritual_misalignment"><label for="spiritual_misalignment"><i class="fa fa-check health_check" aria-hidden="true"></i> spiritual misalignment</label><br>
+                                                    <input type="checkbox" id="back_pain" name="health[]" value="back_pain"><label for="back_pain"><i class="fa fa-check health_check" aria-hidden="true"></i> back pain</label><br>
+                                                    <input type="checkbox" id="heart_problems" name="health[]" value="heart_problems"><label for="heart_problems"><i class="fa fa-check health_check" aria-hidden="true"></i> heart problems</label><br>
+                                                    <input type="checkbox" id="gastrointestinal_problems" name="health[]" value="gastrointestinal_problems"><label for="gastrointestinal_problems"><i class="fa fa-check health_check" aria-hidden="true"></i> gastrointestinal problems</label><br>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-1 action">edit</div>
+                                            <div class="col-xs-1 pablicity">Private</div>
+                                        </div>
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-3 title">Let us get to Know You</div>
+                                            <div class="col-xs-7 data">
+                                                <input class="form_input" name="know" type="text">
+                                            </div>
+                                            <div class="col-xs-1 action">edit</div>
+                                            <div class="col-xs-1 pablicity">Public</div>
+                                        </div>
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-3 title">COMPLETE YOUR HEALTH SURVEY</div>
+                                            <div class="col-xs-7 data">
+                                                <button class="btn btn-default start_survey_button">START</button>
+                                            </div>
+                                            <div class="col-xs-1 action"></div>
+                                            <div class="col-xs-1 pablicity">Private</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 page_info_4">
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-default blue_button">My Team</button>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/video_page/fotosessija_business_portrait_01.jpg"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Anna</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/video_page/fotosessija_business_portrait_01.jpg"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Anna</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/video_page/fotosessija_business_portrait_01.jpg"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Anna</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/video_page/fotosessija_business_portrait_01.jpg"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Anna</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 form_row">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-default blue_button">My Groups</button>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/Screen Shot 2017-08-29 at 1.11.40 PM.png"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Walking Group 1</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/Screen Shot 2017-08-29 at 1.11.40 PM.png"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Walking Group 2</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/Screen Shot 2017-08-29 at 1.11.40 PM.png"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Walking Group 3</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="grid_item">
+                                                    <div class="col-xs-12">
+                                                        <div class="item_avatar"><img src="assets/img/Screen Shot 2017-08-29 at 1.11.40 PM.png"></div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="item_title">Walking Group 4</div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-default view_button">VIEW</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--<div class="empty"></div>-->
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="footer__logo">
+                        <img src="assets/img/main/top-logo.png" alt="">
+                    </div>
+                    <div class="social__block">
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-facebook" aria-hidden="true"></i> 
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-center-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">EBOOKS</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-right-list">
+                        <li><a href="#">Need help?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</div> <!--end wrapper-->
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<script>
+    $(document).ready(function(){
+        $('.page_info_3 label').on('click',function(){
+            if($('#'+$(this).attr('for')+':checked').length > 0){
+                $(this).find('i').removeClass('checked');
+            }else{
+                $(this).find('i').addClass('checked');
+            }
+        });
+    });
+</script>
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

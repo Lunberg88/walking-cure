@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activity</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+<body class="main">
+<div class="wrapper">
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <!-- Top panel -->
+                <div class="top__panel">
+
+                    <!--Site brand-->
+                    <a class="site__brand" href="/">Walking Cure</a>
+
+                    <!-- Search form -->
+                    <form action="" method="get" class="search_box">
+                        <input type="text" class="header_search" name="search" class="form-control" placeholder="Search">
+                    </form>
+                    <!-- //End search -->
+
+                    <!-- Top nav -->
+                    <ul class="menu">
+                        <li class="menu__item active">
+                            <a href="#" class="menu__item-link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Forum</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Tutorial</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Contacts</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Store</a>
+                        </li>
+                    </ul>
+
+                    <!--Social button, Auth and Register links-->
+                    <div class="top_right_menu">
+                        <div class="social__block">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!" target="_blank" class="social-btn">
+                                <img src="assets/img/comment-user-ac.jpg" alt="" class="nav-profile-ava">
+                                <!--<i class="fa fa-facebook" aria-hidden="true">AS</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/1.png" alt="">
+                                <!--<i class="fa fa-youtube-play" aria-hidden="true">SA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/2.png" alt="">
+                                <!--<i class="fa fa-instagram" aria-hidden="true">VA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="social-btn">
+                                <img src="assets/img/icon/3.png" alt="">
+                                <!--<i class="fa fa-twitter" aria-hidden="true">FD</i>-->
+                            </a>
+                        </div>
+                        <div class="auth__register-block">
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+
+                </div> <!-- end top panel -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="account-main">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12 col-xs-12">
+
+                    <!-- Account top block -->
+                    <div class="account-top-wrap-dark clearfix">
+                        <!-- Account top-left block -->
+                        <div class="col-sm-7 col-xs-12">
+                            <div class="account-top__left">
+
+                                <div class="row" style="display: flex;">
+                                    <!-- Main avatar -->
+                                    <div class="col-xs-5">
+                                        <div class="avatar-view">
+                                            <img class="avatar__img" src="assets/img/avatar.png" alt="avatar">
+                                        </div>
+                                    </div> <!-- end main avatar -->
+                                    <!-- User name -->
+                                    <div class="col-xs-7">
+                                        <div class="user-name__block">
+                                            <h4 class="user__name">Vanessa</h4>
+                                        </div>
+                                    </div> <!-- end user name -->
+                                </div>
+
+                            </div>
+                        </div> <!-- end account top-left block -->
+
+                        <!-- Account top-right block -->
+                        <div class="col-sm-5 col-xs-12 clearfix">
+                            <div class="calendar-day-dark">
+                                <span>june 12, 2017</span>
+                            </div>
+                        </div> <!-- end Account top-right block -->
+
+                        <div class="account-top__right pull-right">
+
+                            <!-- Charts block -->
+                            <div class="charts-block clearfix">
+
+                                <!-- Chart item -->
+                                <div class="chart col-sm-6 col-xs-6">
+                                    <span class="chart__title">Task <span id="percent_count"></span>% completed</span>
+                                    <div class="chart__body">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle r="25" cx="50" cy="50" class="pie" id="pie"/>
+                                        </svg>
+                                    </div>
+                                    <input type="hidden" min="0" max="100" value="20" id="utilslider">
+
+                                </div> <!-- end chart item -->
+
+                                <!-- Chart item -->
+                                <div class="chart col-sm-6 col-xs-6">
+              <span class="chart__title">
+                <span id="point_count"></span> points
+              </span>
+                                    <div class="chart__body">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle r="25" cx="50" cy="50" class="pie" id="pie2"/>
+                                        </svg>
+                                    </div>
+                                    <input type="hidden" min="0" max="100" value="50" id="utilslider2">
+                                </div> <!-- end chart item -->
+
+                            </div> <!-- end charts block -->
+
+                            <div class="date-now__wrap">
+                                <span class="date-now">June 12, 2017</span>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- end account top block -->
+
+                    <!-- Account menu block -->
+                    <div class="clearfix account-menu__wrap">
+                        <ul class="account-menu">
+                            <li class="menu__item"><a href="#" class="menu__link">My daily task</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My profile</a></li>
+                            <li class="menu__item menu__item--active"><a href="#" class="menu__link">My activity</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My goals</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My team</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My competition</a></li>
+                        </ul>
+                    </div><!-- end account menu block -->
+
+                    <section class="activity-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 activity_page">
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 1</button>
+                                        <div class="wraped_panel active">
+                                            <form action="" method="POST" enctype="multipart/form-data">
+                                                <div class="col-xs-12 nopadding">
+                                                    <div class="col-xs-9 title">Add pictures of your walk</div>
+                                                    <div class="col-xs-2 points">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">Add your daily steps (Photo or info from our app)</div>
+                                                    <div class="col-xs-4 vcenter"><input class="form_input" name="steps" type="number" placeholder="add a number"></div>
+                                                    <div class="col-xs-2 vcenter">
+                                                        <div class="upload_image_show nomargin">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 3 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">Add your daily waight - lbc (photo)</div>
+                                                    <div class="col-xs-4 vcenter"><input class="form_input" name="steps" type="number" placeholder="add a number"></div>
+                                                    <div class="col-xs-2 vcenter">
+                                                        <div class="upload_image_show nomargin">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Private</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">Add your waist measurement</div>
+                                                    <div class="col-xs-4 vcenter"><input class="form_input" name="steps" type="number" placeholder="add a number"></div>
+                                                    <div class="col-xs-2 vcenter">
+                                                        <div class="upload_image_show nomargin">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Private</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">What did you eat / drink today?</div>
+                                                    <div class="col-xs-6 title vcenter">
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">How were you inspired today?</div>
+                                                    <div class="col-xs-6 title vcenter">
+                                                        <input class="form_input" name="quote" type="text" placeholder="add a quote">
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 1 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;"><p>EXSTRA TASKS</p> What is the best thing we can do while walking?</div>
+                                                    <div class="col-xs-6 title vcenter">
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 1 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <input type="submit" value="Submit" class="btn btn-default submit_activity">
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-xs-12 nopadding">
+                                                    <div class="earned_panel">Today You earned <span>11 POINTS</span></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 2 - upload your activity</button>
+                                        <div class="wraped_panel">
+                                            <form action="" method="POST" enctype="multipart/form-data">
+                                                <div class="col-xs-12 nopadding">
+                                                    <div class="col-xs-9 title">Add pictures of your walk</div>
+                                                    <div class="col-xs-2 points">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                    <div class="upload_image_show">
+                                                        <div class="icon-camera"></div>
+                                                        <!--here image preview element-->
+                                                        <input class="image_file_input" name="image[]" type="file">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">Add your daily steps (Photo or info from our app)</div>
+                                                    <div class="col-xs-4 vcenter"><input class="form_input" name="steps" type="number" placeholder="add a number"></div>
+                                                    <div class="col-xs-2 vcenter">
+                                                        <div class="upload_image_show nomargin">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 3 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">Add your daily waight - lbc (photo)</div>
+                                                    <div class="col-xs-4 vcenter"><input class="form_input" name="steps" type="number" placeholder="add a number"></div>
+                                                    <div class="col-xs-2 vcenter">
+                                                        <div class="upload_image_show nomargin">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Private</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">Add your waist measurement</div>
+                                                    <div class="col-xs-4 vcenter"><input class="form_input" name="steps" type="number" placeholder="add a number"></div>
+                                                    <div class="col-xs-2 vcenter">
+                                                        <div class="upload_image_show nomargin">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Private</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">What did you eat / drink today?</div>
+                                                    <div class="col-xs-6 title vcenter">
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 2 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;">How were you inspired today?</div>
+                                                    <div class="col-xs-6 title vcenter">
+                                                        <input class="form_input" name="quote" type="text" placeholder="add a quote">
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 1 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <div class="col-xs-3 title vcenter" style="width: 23%;"><p>EXSTRA TASKS</p> What is the best thing we can do while walking?</div>
+                                                    <div class="col-xs-6 title vcenter">
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                        <div class="upload_image_show">
+                                                            <div class="icon-camera"></div>
+                                                            <!--here image preview element-->
+                                                            <input class="image_file_input" name="image[]" type="file">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-2 points vcenter">Earn 1 points</div>
+                                                    <div class="col-xs-1 publicity vcenter">Public</div>
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <input type="submit" value="Submit" class="btn btn-default submit_activity">
+                                                </div>
+                                                <div class="col-xs-12 nopadding activity_form_row">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-xs-12 nopadding">
+                                                    <div class="earned_panel">Today You earned <span>11 POINTS</span></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 3 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 4 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 5 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 6 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 7 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 8 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 9 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                    <div class="day_data">
+                                        <button class="btn btn-default button_wraper">Day 10 - upload your activity</button>
+                                        <div class="wraped_panel">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--<div class="empty"></div>-->
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="footer__logo">
+                        <img src="assets/img/main/top-logo.png" alt="">
+                    </div>
+                    <div class="social__block">
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-facebook" aria-hidden="true"></i> 
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-center-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">EBOOKS</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-right-list">
+                        <li><a href="#">Need help?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</div> <!--end wrapper-->
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+
+<!-- endbower -->
+<!-- endbuild -->
+<script>
+    $(document).ready(function(){
+        var pie_chart_id = 0;
+        $('.pie_chart').each(function(){
+            pie_chart_id++;
+            var percent = $(this).attr('p');
+            var width = $(this).width();
+            $(this).html('<canvas id="pie_chart_id_'+pie_chart_id+'" width="'+width+'" height="'+width+'"></canvas>');
+
+            var c = document.getElementById("pie_chart_id_"+pie_chart_id);
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.fillStyle = 'rgba(255,255,255,0.7)';
+            ctx.strokeStyle = 'rgba(0,0,0,0.05)';
+            ctx.arc(width/2,width/2,width/2,0,2*Math.PI);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.fillStyle = '#2f313e';
+            ctx.arc(width/2,width/2,width/2.3,0,2*Math.PI);
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.fillStyle = '#1792a2';
+            ctx.arc(width/2,width/2,width/2.3,-Math.PI/2,(percent*(Math.PI)/50)-Math.PI/2);
+            ctx.lineTo(width/2, width/2);
+            ctx.fill();
+        });
+
+        $('.button_wraper').on('click',function(){
+            var $wraped_panel = $(this).parent().find('.wraped_panel');
+            if($wraped_panel.hasClass("active")){
+                $wraped_panel.removeClass("active");
+            }else{
+                $('.wraped_panel').each(function(){
+                    $(this).removeClass("active");
+                });
+                $wraped_panel.addClass("active")
+            }
+        });
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
