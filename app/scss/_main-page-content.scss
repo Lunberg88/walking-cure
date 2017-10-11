@@ -728,6 +728,21 @@
             font-size: 11px;
             color: #d7d7d7;
             font-weight: bold;
+
+            a, a:active, a:link, a:visited {
+                text-decoration: none;
+                color: #2f313e;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: #8c8c8c;
+            }
+
+            .post-edit {
+                font-size: 18px;
+                padding-right: 40px;
+            }
         }
     }
 

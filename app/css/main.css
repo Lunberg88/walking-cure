@@ -488,6 +488,12 @@ img {
       color: #2f313e;
       font-weight: normal; }
 
+.user-content__footer .post-btn {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px; }
+
 /* Main page content */
 .main {
   background-color: #e9eaee;
@@ -812,7 +818,7 @@ img {
   /* fallback */
   border-color: rgba(255, 255, 255, 0.4);
   -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
-  transition: background-color 0.3s ease-in, border-color 0.3s ease-in; }
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in; }
 
 .danger, .danger:visited {
   width: 100%;
@@ -1013,6 +1019,15 @@ img {
     font-size: 11px;
     color: #d7d7d7;
     font-weight: bold; }
+    .forum_posts_headlines .forum_user_post .topic_date a, .forum_posts_headlines .forum_user_post .topic_date a:active, .forum_posts_headlines .forum_user_post .topic_date a:link, .forum_posts_headlines .forum_user_post .topic_date a:visited {
+      text-decoration: none;
+      color: #2f313e; }
+    .forum_posts_headlines .forum_user_post .topic_date a:hover {
+      text-decoration: none;
+      color: #8c8c8c; }
+    .forum_posts_headlines .forum_user_post .topic_date .post-edit {
+      font-size: 18px;
+      padding-right: 40px; }
   .forum_posts_headlines .pagination {
     padding: 4px 15px;
     font-size: 16px;
