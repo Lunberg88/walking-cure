@@ -136,14 +136,14 @@ img {
     color: #fff;
     text-decoration: none; }
 
-.menu {
+.main_menu {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0; }
-  .menu .menu__item {
+  .main_menu .menu-item {
     display: inline-block;
     margin: 5px 0.75rem; }
-    .menu .menu__item .menu__item-link {
+    .main_menu .menu-item a {
       color: #fff;
       font-family: 'MyriadProRegular', sans-serif;
       font-size: 0.875rem; }

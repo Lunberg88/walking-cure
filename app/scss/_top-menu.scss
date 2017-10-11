@@ -16,16 +16,16 @@
         text-decoration: none;
     }
 }
-.menu {
+.main_menu {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
 
-    .menu__item {
+    .menu-item {
         display: inline-block;
         margin: 5px rem(12);
 
-        .menu__item-link {
+        a {
             color: #fff;
             font-family: 'MyriadProRegular', sans-serif;
             font-size: rem(14);
