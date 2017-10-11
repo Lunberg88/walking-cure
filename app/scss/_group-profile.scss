@@ -3,12 +3,11 @@
 }
 
 .group-reg-bg {
-  margin-top: 30px;
   padding: 20px 0px;
   height: 300px;
   position: relative;
-  top: 60px;
-  background: #fff url('../assets/img/main-slide-2.jpg') no-repeat center center;
+  top: 30px;
+  background: linear-gradient(195deg, #fff 15%, transparent 90%), url('../assets/img/main-slide-2.jpg') no-repeat center center;
   background-size: cover;
 
   .logo-wc-top {
@@ -172,4 +171,11 @@
       font-weight: normal;
     }
   }
+}
+
+.user-content__footer .post-btn {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
 }

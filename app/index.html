@@ -4,17 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Homepage</title>
 
+    <!--
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    -->
+    <!-- build:css css/vendor.css -->
+    <!-- Font Awesome -->
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
 
 </head>
 <body class="main">
 <div class="wrapper">
 
     <!--Header-->
+
     <header class="header">
         <div class="container">
             <div class="row">
@@ -25,49 +42,52 @@
                     <a class="site__brand" href="/">Walking Cure</a>
 
                     <!-- Top nav -->
-                    <ul class="menu">
-                        <li class="menu__item active">
-                            <a href="#" class="menu__item-link">About</a>
+                    <ul class="main_menu">
+                        <li class="menu-item active">
+                            <a href="#" class="menu-item-link">About</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">Blog</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Blog</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">FAQ</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">FAQ</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">Forum</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Forum</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">Tutorial</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Tutorial</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">Contacts</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Contacts</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item-link">Store</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Store</a>
                         </li>
                     </ul>
 
                     <!--Social button, Auth and Register links-->
-                    <div>
+                    <div class="top_right_menu">
                         <div class="social__block">
-                            <a href="#" target="_blank" class="social-btn">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/comment-user-ac.jpg" alt="" class="nav-profile-ava">
+                                <!--<i class="fa fa-facebook" aria-hidden="true">AS</i>-->
                             </a>
-                            <a href="#" target="_blank" class="social-btn">
-                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/icon/1.png" alt="">
+                                <!--<i class="fa fa-youtube-play" aria-hidden="true">SA</i>-->
                             </a>
-                            <a href="#" target="_blank" class="social-btn">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/icon/2.png" alt="">
+                                <!--<i class="fa fa-instagram" aria-hidden="true">VA</i>-->
                             </a>
-                            <a href="#" target="_blank" class="social-btn">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/icon/3.png" alt="">
+                                <!--<i class="fa fa-twitter" aria-hidden="true">FD</i>-->
                             </a>
                         </div>
                         <div class="auth__register-block">
-                            <a href="#">Log In</a> /
-                            <a href="#">Registration</a>
+                            <a href="#">Log Out</a>
                         </div>
                     </div>
 
@@ -75,7 +95,6 @@
             </div>
         </div>
     </header>
-
     <!-- Main -->
     <main>
 
