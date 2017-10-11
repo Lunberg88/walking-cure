@@ -1,0 +1,131 @@
+.result_pie_chart_block{
+    height: 175px;
+    width: 320px;
+    float: right;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    font-size: 15px;
+    font-weight: 600;
+    .pie_chart{
+        width: 120px;
+        margin: 0 auto;
+    }
+}
+.calendar-day-dark{
+    width: 100%;
+    text-align: right;
+    span {
+        color: #ffffff;
+        text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    }
+}
+.activity-content{
+    margin-bottom: 25px;
+}
+.activity-content .container{
+    width: auto;
+}
+.activity_page{
+    background: #ffffff;
+    padding: 10px 45px 10px 35px;
+    border-radius: 10px;
+    .button_wraper{
+        width: 100%;
+        background: #1792a2;
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .wraped_panel{
+        .vcenter {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 0px;
+        &.active{
+            height: auto;
+            padding-bottom: 10px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .points{
+            font-weight: 600;
+            color: #ff7903;
+            font-size: 13px;
+            text-align: right;
+        }
+        .publicity{
+            font-size: 12px;
+            color: #8b8a8f;
+            text-align: right;
+        }
+        .activity_form_row{
+            margin-top: 22px;
+        }
+        .form_input{
+            width: 100%;
+            background: #f1f2f4;
+            border: 1px solid #d2d2d2;
+            border-radius: 2px;
+            padding: 12px 25px;
+            font-size: 11px;
+            font-weight: 100;
+        }
+        .upload_image_show{
+            position: relative;
+            height: 125px;
+            width: 125px;
+            float: left;
+            margin: 0px 12px;
+            background: #f1f2f4;
+            border: 1px solid #d2d2d2;
+            .icon-camera{
+                color: #909098;
+                margin: 38%;
+                font-size: 30px;
+            }
+            .image_file_input{
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 125px;
+                width: 125px;
+                cursor: pointer;
+            }
+        }
+        .submit_activity{
+            margin: 0 auto;
+            width: 165px;
+            display: block;
+            background: #d84f6b;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 10px;
+        }
+        .earned_panel{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 600;
+            span{
+                color: #d84f6b;
+                font-size: 31px;
+            }
+        }
+    }
+    .nopadding{
+        padding: 0;
+    }
+    .nomargin{
+        margin: 0 !important;
+    }
+}

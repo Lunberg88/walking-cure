@@ -1,0 +1,190 @@
+.profile_info-content .container{
+    width: auto;
+}
+.account-menu .menu__item{
+    position: relative;
+}
+.account-menu .menu__item .new_notice{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #c03451;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+.profile_info_page{
+    .page_header{
+        background: #ffffff;
+        padding: 10px 45px 15px 53px;
+        border-radius: 10px 10px 0 0;
+        border: 1px solid #d7d7d7;
+        h1{
+            font-weight: 600;
+            font-size: 22px;
+            margin: 0;
+        }
+    }
+    .page_info_1{
+        padding: 10px 25px 40px 23px;
+        background: #ffffff;
+        border-right: 1px solid #d7d7d7;
+        border-left: 1px solid #d7d7d7;
+    }
+    .form_input{
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid #d2d2d2;
+        border-radius: 2px;
+        padding: 12px 15px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .form_row{
+        margin-top: 20px;
+    }
+    .action{
+        text-align: right;
+        color: #1792a1;
+        cursor: pointer;
+    }
+    .pablicity{
+        text-align: right;
+        color: #959499;
+    }
+    .data_title{
+        color: #5d5d69;
+        font-size: 16px;
+    }
+    .data{
+        color: black;
+        font-weight: 600;
+    }
+    .title{
+        color: black;
+        font-weight: 600;
+        font-size: 14px;
+        .small{
+            font-size: 10px;
+            font-style: italic;
+        }
+    }
+    .page_info_2{
+        background: #f7f7f7;
+        padding: 6px 25px 23px 23px;
+        border-right: 1px solid #d7d7d7;
+        border-left: 1px solid #d7d7d7;
+        .input_notice{
+            color: #b2b1b6;
+            font-size: 13px;
+            line-height: 26px;
+        }
+        .edit_buton{
+            width: 110px;
+            background: #d84f6b;
+            color: #ffffff;
+            font-size: 13px;
+            padding: 8px;
+            margin-right: 25px;
+        }
+        .cancel_button{
+            width: 110px;
+            font-size: 13px;
+            padding: 8px;
+            border: 1px solid black;
+        }
+    }
+    .page_info_3{
+        padding: 5px 25px 47px 23px;
+        background: #ffffff;
+        border-right: 1px solid #d7d7d7;
+        border-left: 1px solid #d7d7d7;
+        label{
+            font-size: 13px;
+            font-weight: 100;
+            margin-bottom: 15px;
+        }
+        [type="checkbox"]{
+            display: none;
+        }
+        .health_check{
+            border: 1px solid #a3a3a3;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 12px;
+            line-height: 18px;
+            margin-right: 10px;
+            &.checked{
+                background: #1894a0;
+                border: none;
+            }
+        }
+        .start_survey_button{
+            font-weight: 600;
+            background: #ff7900;
+            color: #ffffff;
+            width: 180px;
+            padding: 10px 10px;
+        }
+    }
+    .page_info_4{
+        padding: 5px 25px 10px 23px;
+        background: #ffffff;
+        border: 1px solid #d7d7d7;
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 30px;
+        .blue_button{
+            background: #1792a2;
+            color: #ffffff;
+            font-weight: 600;
+            width: 195px;
+            padding: 10px 10px;
+            font-size: 16px;
+        }
+        .grid_item{
+            text-align: center;
+            width: 230px;
+            border: 1px solid #d7d7d7;
+            float: left;
+            border-radius: 5px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 15px;
+            &:hover{
+                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+            }
+            .item_avatar{
+                border-radius: 50%;
+                overflow: hidden;
+                width: 130px;
+                height: 130px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+            .item_title{
+                font-weight: 600;
+                font-size: 13px;
+                margin-top: 15px;
+            }
+            .view_button{
+                background: #d84f6b;
+                color: #ffffff;
+                font-weight: 600;
+                width: 155px;
+                padding: 7px 10px;
+                font-size: 13px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
