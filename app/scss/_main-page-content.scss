@@ -10,8 +10,9 @@
         width: 100%;
         height: 430px;
         margin-top: -70px;
-        background: linear-gradient(to right, #fff 0.5%, transparent 40%), url('../assets/img/forum/forum_bg_lg.jpg') no-repeat top;
-        background-size: cover;
+        background: linear-gradient(to right, #fff 0.5%, transparent 40%), url('../assets/img/forum/iStock_27205017_XXXLARGE.jpg') no-repeat top;
+        //background-size: cover;
+        background-position-y: 25%;
     }
 
     .hero-section {
@@ -19,12 +20,15 @@
         position: relative;
         height: rem(620);
         padding: rem(25) 0 rem(55);
+        background: linear-gradient(to bottom, transparent 5%, #70727b 140%), url(../assets/img/main/homepage-bg-logo-new.jpg) repeat-x center;
         //background: url('../assets/img/main/hero-section-bg.png') no-repeat center;
-        //background-size: cover;
+        background-size: cover;
+        background-position: 79% 50%;
+        margin-top: -20px;
     }
     .hero__bottom {
         display: flex;
-        padding-bottom: rem(55);
+        //padding-bottom: rem(55);
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
@@ -49,13 +53,26 @@
             line-height: rem(38);
         }
     }
+
+
+    .title-block .main-center-text h3 {
+        text-transform: uppercase;
+        text-shadow: 1px 1px 5px #ffffff, 0 0 1em #ffffff;
+        /* Параметры тени */
+        color: #1e93a2;
+        /* Белый цвет текста */
+        font-size: 1.65rem;
+        /* Размер надписи */
+        font-weight: bold;
+        font-family: 'Open Sans', Arial;
+    }
+
     .trial-form {
         .trial-input {
             display: inline-block;
             margin: 0 rem(15);
             padding: rem(25) rem(55);
             background: transparent;
-            box-shadow: 0 11px 13px rgba(15, 15, 15, 0.28);
             border-radius: 3px;
             border: 1px solid #ffffff;
 
@@ -84,7 +101,7 @@
     }
 
     /* how it work section */
-    .how-it-work {
+    /* .how-it-work {
         padding: rem(40) rem(60);
         background: url('../assets/img/main/how-it-work-section-bg.png') no-repeat center top;
         background-size: cover;
@@ -97,7 +114,7 @@
                 position: relative;
                 padding-top: rem(45);
 
-                /* Vertical line */
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -112,7 +129,7 @@
                     background: none;
                 }
 
-                /* Icons */
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -166,7 +183,7 @@
             }
         }
 
-        /* Timer */
+
         .timer {
             margin-bottom: rem(10);
             text-align: center;
@@ -194,7 +211,7 @@
             }
         }
 
-    }
+    } */
 
 
     .section-title {
@@ -207,7 +224,7 @@
         line-height: rem(78);
     }
     /* Five section */
-    .s5 {
+    /* .s5 {
         padding: rem(50) 0;
         background: #1792a2;
 
@@ -226,7 +243,7 @@
                 font-weight: 700;
                 text-transform: uppercase;
 
-                /* Icons */
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -282,7 +299,8 @@
     }
 
     /* Challenges section */
-    .challenges {
+
+    /* .challenges {
         .section-title__red {
             display: block;
             text-align: center;
@@ -315,9 +333,9 @@
             line-height: rem(36);
         }
 
-    }
+    } */
 
-    .review {
+    /* .review {
         padding: rem(65) 0 rem(65) 0;
         background-color: #f3f3f3;
 
@@ -354,7 +372,7 @@
             font-weight: 400;
             line-height: rem(27);
         }
-    }
+    } */
 
     .start-trial-btn {
         display: inline-block;
@@ -379,6 +397,47 @@
         }
     }
 
+}
+
+.main .bg {
+    background: #fff;
+}
+
+.main .how-it-work .limit-space-active {
+    text-align: center;
+}
+
+.main .how-it-work .limited-spaces {
+    color: #d84f6b;
+    font-weight: bold;
+    font-size: 2.15rem;
+}
+
+.main .how-it-work .timer-title {
+    margin-top: .625rem;
+    color: #2f313e;
+    font-family: "Open Sans",sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.0625rem;
+}
+
+.main .trial-btn {
+    background-color: #d84f6b;
+    border-color: #d84f6b;
+}
+
+.main .trial-form .trial-input {
+    display: inline-block;
+    margin: 0 .9375rem;
+    padding: 1.5625rem 3.4375rem;
+    background: 0 0;;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-size: .9375rem;
+    font-weight: 700;
 }
 
 /** Forums **/

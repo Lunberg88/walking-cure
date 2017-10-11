@@ -141,6 +141,9 @@
     .account-main {
       width: 100%; } }
 
+.head {
+  margin: -15px auto; }
+
 .account-top-wrap {
   padding: 20px 35px;
   height: 300px;
@@ -152,11 +155,11 @@
   padding: 20px 35px;
   height: 300px;
   position: relative;
-  background: #fff url("../assets/img/profile/sebastien-gabriel-13688.jpg") no-repeat center center;
+  background: linear-gradient(to bottom, transparent 60%, #615454 120%), url(../assets/img/profile/sebastien-gabriel-13688.jpg) no-repeat center center;
   background-size: cover; }
 
 .group-nobg {
-  background: #fff; }
+  background: transparent linear-gradient(to bottom, #fff 70%, #615454 120%); }
 
 .account-top__left,
 .account-top__right {
@@ -206,9 +209,10 @@
   .group-pr .team-name {
     position: relative;
     bottom: 50px;
-    color: #2f313e;
+    color: #fff;
     font-weight: bold;
-    font-size: 18px; }
+    font-size: 18px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
 
 .upload_group_bg {
   width: 400px;
@@ -229,11 +233,12 @@
 
 .user__name {
   display: inline-block;
-  margin: 155px 0 -26px 0;
+  margin: 220px 0 0 0;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 26px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
   @media (max-width: 1050px) {
     .user__name {
       font-size: 24px; } }
@@ -380,10 +385,10 @@
     color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 18px;
     padding: 3px 10px;
-    background: rgba(255, 255, 255, 0.5); }
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
 
 /* User content */
 .user-content__wrap {
