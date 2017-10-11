@@ -136,14 +136,14 @@ img {
     color: #fff;
     text-decoration: none; }
 
-.menu {
+.main_menu {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0; }
-  .menu .menu__item {
+  .main_menu .menu-item {
     display: inline-block;
     margin: 5px 0.75rem; }
-    .menu .menu__item .menu__item-link {
+    .main_menu .menu-item a {
       color: #fff;
       font-family: 'MyriadProRegular', sans-serif;
       font-size: 0.875rem; }
@@ -172,11 +172,13 @@ img {
     text-align: center;
     width: 1.6875rem;
     height: 1.6875rem;
+    background: #fff;
     border-radius: 50%;
     transition: all 0.15s ease;
     border: 1px solid transparent; }
     .social__block .social-btn:hover {
       background: #1e93a2;
+      border: 1px solid #ffffff;
       /*opacity: 0.4;*/ }
       .social__block .social-btn:hover i {
         color: #fff; }
@@ -184,6 +186,19 @@ img {
       color: #1e93a2;
       font-size: 1.125rem;
       line-height: 1.6875rem; }
+  .social__block .prof-btn {
+    display: inline-block;
+    margin: 0 0.1875rem;
+    text-align: center;
+    width: 1.6875rem;
+    height: 1.6875rem;
+    border-radius: 50%;
+    transition: all 0.15s ease;
+    border: 1px solid transparent; }
+    .social__block .prof-btn:hover {
+      background: #1e93a2; }
+      .social__block .prof-btn:hover i {
+        color: #fff; }
 
 .auth__register-block {
   display: inline-block;
