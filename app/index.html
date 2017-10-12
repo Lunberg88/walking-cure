@@ -5,14 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
-
-    <!--
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    -->
-    <!-- build:css css/vendor.css -->
-    <!-- Font Awesome -->
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
@@ -27,7 +19,7 @@
     <!-- endbuild -->
 
 </head>
-<body class="main">
+<body class="main bg">
 <div class="wrapper">
 
     <!--Header-->
@@ -69,21 +61,17 @@
                     <!--Social button, Auth and Register links-->
                     <div class="top_right_menu">
                         <div class="social__block">
-                            <a href="#" target="_blank" class="prof-btn">
-                                <img src="assets/img/comment-user-ac.jpg" alt="" class="nav-profile-ava">
-                                <!--<i class="fa fa-facebook" aria-hidden="true">AS</i>-->
+                            <a href="#" target="_blank" class="social-btn">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank" class="prof-btn">
-                                <img src="assets/img/icon/1.png" alt="">
-                                <!--<i class="fa fa-youtube-play" aria-hidden="true">SA</i>-->
+                            <a href="#" target="_blank" class="social-btn">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank" class="prof-btn">
-                                <img src="assets/img/icon/2.png" alt="">
-                                <!--<i class="fa fa-instagram" aria-hidden="true">VA</i>-->
+                            <a href="#" target="_blank" class="social-btn">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank" class="prof-btn">
-                                <img src="assets/img/icon/3.png" alt="">
-                                <!--<i class="fa fa-twitter" aria-hidden="true">FD</i>-->
+                            <a href="#" target="_blank" class="social-btn">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="auth__register-block">
@@ -110,6 +98,7 @@
                 <div class="hero__bottom">
                     <!--Title block-->
                     <div class="title-block">
+                        <div class="main-center-text"><h3>dr.kim's health walking porgram</h3></div>
                         <h1 class="lg-title">Start your <span style="text-transform: uppercase;">FREE 10-DAY TRIAL</span> today!</h1>
                         <h2 class="sm-title">During this ten days you'll get more energy, lose up to 10 lbs,  <br> and be confident with Dr. Kim's Walking Cure Program</h2>
                     </div>
@@ -146,9 +135,10 @@
                 <div class="row">
                     <div class="col-lg-5 col-xs-12 col-lg-push-7" style="padding-right:0;padding-left:0;">
                         <!--Timer-->
+                        <p class="limit-space-active"><span class="limited-spaces">Limited spaces available!</span></p>
                             <h6 class="timer-title">Our <strong>FREE</strong> 10-Day Trial <strong style="color: #d84f6b">Starts</strong> in:</h6>
                             <div class="timer"
-                                 data-end-timer="2017-10-12 11:24"
+                                 data-end-timer="2017-12-12 11:24"
                                  data-message="Happening Now!">
                                 <div id="timer">
                                     D:H:M
@@ -174,17 +164,16 @@
                 <div class="text-block">
                     <p>
                         <span>In this life-changing Daily Walking Cure Program,</span>
-                        Dr. Kim guides you through physical, mental, emotional, and spiritual ways of walking.
+                        Dr. Kim guides you
                     </p>
                     <p>
-                         You will do over 17 different types of walking techniques to improve diabetes, hypertension, obesity,
-                        depression, emotional trauma, spiritual misalignment, and back pain,
-                        so that you can improve your health, stay active, and feel great.
+                        through physical, mental, emotional, and spiritual ways of walking.  You will
+                    </p>
+                        do over 17 different types of walking techniques to improve diabetes, hyper-
                     </p>
                     <p>
-                         You will do over 17 different types of walking techniques to improve diabetes, hypertension, obesity,
-                        depression, emotional trauma, spiritual misalignment, and back pain,
-                        so that you can improve your health, stay active, and feel great.
+                        tension, obesity,
+                        depression, emotional trauma.
                     </p>
                 </div>
             </div>
@@ -368,8 +357,17 @@
 
 </div> <!--end wrapper-->
 
-<script src="js/vendor.js"></script>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
+<!-- build:js js/main.js -->
 <script src="js/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>
