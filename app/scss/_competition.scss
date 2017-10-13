@@ -1,0 +1,72 @@
+/** Competition **/
+.compete-bg {
+  //height: 270px;
+  background: linear-gradient(to right, #fff 30%, transparent 70%), url('../assets/img/competition/eldorado_dr.kim_gray.jpg');
+  background-size: cover;
+}
+
+.compete-body {
+  margin-top: -14px;
+}
+
+.compete-logo {
+  max-width: 500px;
+  position: relative;
+  top: -120px;
+  right: 40px;
+  float: right;
+  border: 0;
+
+  img {
+    max-width: 120px;
+    margin-left: 100px;
+  }
+
+  .compete-logo-text {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(47,49,62);
+    font-family: "OpenSans-Bold", Arial;
+    font-weight: bold;
+  }
+}
+
+.menu-horizontal {
+  padding-left: 0;
+  padding-right: 20%;
+}
+
+.compete-body {
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  padding: 20px 30px;
+  border-radius: 2px;
+
+  .compete-body {
+
+  }
+
+  .compete_invite_btn {
+    font-size: 14px;
+    font-family: 'OpenSans-Bold', Arial;
+    font-weight: 700;
+
+    a, a:active, a:link, a:visited {
+      padding: 12px 20px;
+      text-decoration: none;
+      color: #fff;
+      background: #ff7900;
+      border-radius: 2px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #ff7900;
+      background: #fff;
+      border: 1px solid #ff7900;
+    }
+
+  }
+}

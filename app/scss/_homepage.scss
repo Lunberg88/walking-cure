@@ -148,8 +148,8 @@
 .main .hero-section {
   display: flex;
   position: relative;
+  height: 38.75rem;
   padding: 1.5625rem 0 3.4375rem;
-  margin-top: -20px;
   background: linear-gradient(to bottom, transparent 5%, #70727b 140%), url(../assets/img/main/homepage-bg-logo-new.jpg) repeat-x center;
   background-size: cover;
   background-position: 79% 50%;
@@ -170,10 +170,11 @@
 
 .main .hero__bottom {
   display: flex;
+  //padding-bottom: 3.4375rem;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  //height: 90%;
+  height: 90%;
 }
 
 .main .title-block {
