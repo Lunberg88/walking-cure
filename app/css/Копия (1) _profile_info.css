@@ -1,0 +1,178 @@
+.profile_info-content .container {
+  width: auto; }
+
+.account-menu .menu__item {
+  position: relative; }
+
+.account-menu .menu__item .new_notice {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #c03451;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px; }
+
+.profile_info_page .page_header {
+  background: #ffffff;
+  padding: 10px 45px 15px 53px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #d7d7d7; }
+  .profile_info_page .page_header h1 {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0; }
+
+.profile_info_page .page_info_1 {
+  padding: 10px 25px 40px 23px;
+  background: #ffffff;
+  border-right: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7; }
+
+.profile_info_page .form_input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 2px;
+  padding: 12px 15px;
+  font-size: 13px;
+  font-weight: 600; }
+
+.profile_info_page .form_row {
+  margin-top: 20px; }
+  .profile_info_page .form_row .profile_titles:nth-child(1) {
+    margin-top: 0; }
+  .profile_info_page .form_row .profile_titles {
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 26px;
+    margin-top: -10px;
+    margin-bottom: 0; }
+
+.profile_info_page .action {
+  text-align: right;
+  color: #1792a1;
+  cursor: pointer; }
+
+.profile_info_page .pablicity {
+  text-align: right;
+  color: #959499; }
+
+.profile_info_page .data_title {
+  color: #5d5d69;
+  font-size: 16px; }
+
+.profile_info_page .data {
+  color: black;
+  font-weight: 600; }
+
+.profile_info_page .title {
+  color: black;
+  font-weight: 600;
+  font-size: 14px; }
+  .profile_info_page .title .small {
+    font-size: 10px;
+    font-style: italic; }
+
+.profile_info_page .page_info_2 {
+  background: #f7f7f7;
+  padding: 6px 25px 23px 23px;
+  border-right: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7; }
+  .profile_info_page .page_info_2 .input_notice {
+    color: #b2b1b6;
+    font-size: 13px;
+    line-height: 26px; }
+  .profile_info_page .page_info_2 .edit_buton {
+    width: 110px;
+    background: #d84f6b;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px;
+    margin-right: 25px; }
+  .profile_info_page .page_info_2 .cancel_button {
+    width: 110px;
+    font-size: 13px;
+    padding: 8px;
+    border: 1px solid black; }
+
+.profile_info_page .page_info_3 {
+  padding: 5px 25px 47px 23px;
+  background: #ffffff;
+  border-right: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7; }
+  .profile_info_page .page_info_3 label {
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 15px; }
+  .profile_info_page .page_info_3 [type="checkbox"] {
+    display: none; }
+  .profile_info_page .page_info_3 .health_check {
+    border: 1px solid #a3a3a3;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 10px; }
+    .profile_info_page .page_info_3 .health_check.checked {
+      background: #1894a0;
+      border: none; }
+  .profile_info_page .page_info_3 .start_survey_button {
+    font-weight: 600;
+    background: #ff7900;
+    color: #ffffff;
+    width: 180px;
+    padding: 10px 10px; }
+
+.profile_info_page .page_info_4 {
+  padding: 5px 25px 10px 23px;
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 30px; }
+  .profile_info_page .page_info_4 .blue_button {
+    background: #1792a2;
+    color: #ffffff;
+    font-weight: 600;
+    width: 195px;
+    padding: 10px 10px;
+    font-size: 16px; }
+  .profile_info_page .page_info_4 .grid_item {
+    text-align: center;
+    width: 230px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px; }
+    .profile_info_page .page_info_4 .grid_item:hover {
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
+    .profile_info_page .page_info_4 .grid_item .item_avatar {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 130px;
+      height: 130px;
+      margin: 0 auto; }
+      .profile_info_page .page_info_4 .grid_item .item_avatar img {
+        width: 100%; }
+    .profile_info_page .page_info_4 .grid_item .item_title {
+      font-weight: 600;
+      font-size: 13px;
+      margin-top: 15px; }
+    .profile_info_page .page_info_4 .grid_item .view_button {
+      background: #d84f6b;
+      color: #ffffff;
+      font-weight: 600;
+      width: 155px;
+      padding: 7px 10px;
+      font-size: 13px;
+      margin-top: 15px; }
