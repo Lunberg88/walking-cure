@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Task</title>
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body class="main">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="wrapper">
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <!-- Top panel -->
+                <div class="top__panel">
+
+                    <!--Site brand-->
+                    <a class="site__brand" href="/">Walking Cure</a>
+
+                    <!-- Search form -->
+                    <form action="" method="get" class="search_box">
+                        <input type="text" class="header_search" name="search" class="form-control" placeholder="Search">
+                    </form>
+                    <!-- //End search -->
+
+                    <!-- Top nav -->
+                    <ul class="main_menu">
+                        <li class="menu-item active">
+                            <a href="#" class="menu-item-link">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Blog</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">FAQ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Forum</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Tutorial</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Contacts</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Store</a>
+                        </li>
+                    </ul>
+
+                    <!--Social button, Auth and Register links-->
+                    <div class="top_right_menu">
+                        <div class="social__block">
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/comment-user-ac.jpg" alt="" class="nav-profile-ava">
+                                <!--<i class="fa fa-facebook" aria-hidden="true">AS</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/icon/1.png" alt="">
+                                <!--<i class="fa fa-youtube-play" aria-hidden="true">SA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/icon/2.png" alt="">
+                                <!--<i class="fa fa-instagram" aria-hidden="true">VA</i>-->
+                            </a>
+                            <a href="#" target="_blank" class="prof-btn">
+                                <img src="assets/img/icon/3.png" alt="">
+                                <!--<i class="fa fa-twitter" aria-hidden="true">FD</i>-->
+                            </a>
+                        </div>
+                        <div class="auth__register-block">
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+
+                </div> <!-- end top panel -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="account-main">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12 col-xs-12">
+
+                    <!-- Account top block -->
+                    <div class="account-top-wrap clearfix">
+                        <!-- Account top-left block -->
+                        <div class="col-sm-7 col-xs-12">
+                            <div class="account-top__left">
+
+                                <div class="row" style="display: flex;">
+                                    <!-- Main avatar -->
+                                    <div class="col-xs-5">
+                                        <div class="avatar-view">
+                                            <img class="avatar__img" src="assets/img/avatar.png" alt="avatar">
+                                        </div>
+                                    </div> <!-- end main avatar -->
+                                    <!-- User name -->
+                                    <div class="col-xs-7">
+                                        <div class="user-name__block">
+                                            <h4 class="user__name">Vanessa</h4>
+                                        </div>
+                                    </div> <!-- end user name -->
+                                </div>
+
+                            </div>
+                        </div> <!-- end account top-left block -->
+
+                        <!-- Account top-right block -->
+                        <div class="col-sm-5 col-xs-12 clearfix">
+                            <div class="calendar-day-dark">
+                            </div>
+                        </div> <!-- end Account top-right block -->
+
+                        <div class="account-top__right pull-right">
+
+                            <!-- Charts block -->
+                            <div class="charts-block clearfix">
+
+                                <!-- Chart item -->
+                                <div class="chart col-sm-6 col-xs-6">
+                                    <span class="chart__title daily-task">Task <span id="percent_count"></span>% completed</span>
+                                    <div class="chart__body">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle r="25" cx="50" cy="50" class="pie" id="pie"/>
+                                        </svg>
+                                    </div>
+                                    <input type="hidden" min="0" max="100" value="20" id="utilslider">
+
+                                </div> <!-- end chart item -->
+
+                                <!-- Chart item -->
+                                <div class="chart col-sm-6 col-xs-6">
+                                  <span class="chart__title daily-task">
+                                    <span id="point_count"></span> points
+                                  </span>
+                                    <div class="chart__body">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle r="25" cx="50" cy="50" class="pie" id="pie2"/>
+                                        </svg>
+                                    </div>
+                                    <input type="hidden" min="0" max="100" value="50" id="utilslider2">
+                                </div> <!-- end chart item -->
+
+                            </div> <!-- end charts block -->
+
+                            <div class="date-now__wrap">
+                                <span class="date-now">June 12, 2017</span>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- end account top block --> 
+
+                    <!-- Account menu block -->
+                    <div class="clearfix account-menu__wrap">
+                        <ul class="account-menu">
+                            <li class="menu__item"><a href="#" class="menu__link">My daily task</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My profile</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My activity</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My goals</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My team</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">My competition</a></li>
+                        </ul>
+                    </div><!-- end account menu block -->
+                    <!--<section class="profile-content daily-content">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-10">
+                                    <div class="row">
+                                        <div class="profile-left-col daily-main-content">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="daily-video-title">
+                                            Day 1.(Sunday)
+                                            <p>Create Daily Walking Habits. Getting Started</p>
+                                        </div>
+                                        <div class="daily-video-content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2 daily-right">
+                                    <div class="row">
+                                        <div class="profile-right-col">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="right-col-title">
+                                                        Basic Challenge
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>-->
+
+                    <section class="daily-tasks-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-10">
+                                    <div class="daily-main-col">
+                                        <div class="row">
+                                            <div class="content-task-title">
+                                                <span class="task-title-big">Congratulations!</span>
+                                                <p>You began your 10-Day Basic Challenge!</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="daily-video-title">
+                                                Day 1.(Sunday)
+                                                <p>Create Daily Walking Habits. Getting Started</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="daily-video-content">
+                                                <iframe class="video daily-frame" src="https://www.youtube.com/embed/eIFrqM_Snfs" frameborder="0" allowfullscreen="" style="height: 338px;">
+                                                </iframe>
+                                                <!--<img src="assets/img/top-header-logo.jpg" alt="">-->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="daily-challenge-title">
+                                                <h3>Congratulations on your commitment to your health!</h3>
+                                            </div>
+                                            <div class="daily-challenge-text">
+                                                <ul>
+                                                    <li>
+                                                        <p>Let’s get started! For the next 10 days, we will focus on crea-</p>
+                                                        <p>ting daily walking habits. We will walk 20     minutes in the</p>
+                                                        <p>morning and 10 minutes after lunch and 10 minutes after </p>
+                                                        <p>dinner.</p>
+                                                        <p>Morning  walks are invigorating and a great way to get your</p>
+                                                        <p>day started. Let’s schedule your morning walk ahead of time</p>
+                                                        <p>you can consistently walk in the morning. This may require</p>
+                                                        <p>you to get up 20 minutes    earlier than your usual wake up </p>
+                                                        <p>time.</p><br />
+                                                    </li>
+                                                    <li>
+                                                        <p>Let’s get started! For the next 10 days, we will focus on crea-</p>
+                                                        <p>ting daily walking habits. We will walk 20     minutes in the</p>
+                                                        <p>morning and 10 minutes after lunch and 10 minutes after </p>
+                                                        <p>dinner.</p>
+                                                        <p>Morning  walks are invigorating and a great way to get your</p>
+                                                        <p>day started. Let’s schedule your morning walk ahead of time</p>
+                                                        <p>you can consistently walk in the morning. This may require</p>
+                                                        <p>you to get up 20 minutes    earlier than your usual wake up </p>
+                                                        <p>time.</p><br />
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="ender-text">You can do this! Have a great day, Dr. Kim</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="daily-task-box">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                           <span class="bottom-task-box">
+                                                                Your tasks for today:
+                                                            </span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block-list-style">
+                                                                <div class="left-list-style">
+                                                                    1. Walking
+                                                                </div>
+                                                                <div class="right-list-style">
+                                                                    6 points total
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block-list-comment">
+                                                                Upload pictures and pedometer statistic
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block-list">
+                                                                <ul>
+                                                                    <li>
+                                                                        Schedule your first 20 minute walk (1 mile, 2000 steps) preferably in the morning
+                                                                    </li>
+                                                                    <li>
+                                                                        Check your schedule: Will you be walking first thing in the morning, lunch time or after dinner?
+                                                                    </li>
+                                                                    <li>
+                                                                        Check your route: Where will you be  walking? Neighborhood, park, treadmill, trail, beach, mall or stairs?
+                                                                    </li>
+                                                                    <li>
+                                                                        Walk 10 minutes after lunch and 10 minutes after dinner.
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block-list-comment">
+                                                                2. PM Circadian Rhythm Enhancement habits
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block-list">
+                                                                <ul>
+                                                                    <li>
+                                                                        Stop LED (TV, computer, phone) at least two hours before sleep
+                                                                        <span class="li-points">3 points total</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6  vertical-line">
+                                                        <div class="row">
+                                                            <span class="bottom-task-box right-line">
+                                                                <p>EXTRA TASKS -</p>
+                                                                <p>EXTRA BONUS - <span class="points-title">2 points</span></p>
+                                                            </span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block-list-style">
+                                                                <div class="left-list-style">
+                                                                    What is the best thing we can do while walking?
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block-list-comment right-comment">
+                                                                Try to take a unique scenic picture.
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <img src="assets/img/daily_task/NEWFEEL_2016_SOFT_140_0393.jpg" class="tasks-pics">
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <img src="assets/img/daily_task/marche-active-femme.jpg" class="tasks-pics">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-xs-push-3">
+                                                        <div class="share-btn">
+                                                            <a href="" class="bottom-box-btn">
+                                                                Share your activity here - Earn Points
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div class="daily-right-col">
+                                        <div class="right-col-box">
+                                            Basic Challenge
+                                            <p>
+                                                <span><img src="assets/img/noun_1097947_cc_arrow.png" alt="" class="right-title-arrow"></span>
+                                            </p>
+                                        </div>
+                                        <div class="right-col-days">
+                                            <span class="tasks-inactive">Day-1</span>
+                                            <span class="tasks-active">Day-2</span>
+                                            <span class="tasks-inactive">Day-3</span>
+                                            <span class="tasks-inactive">Day-4</span>
+                                            <span class="tasks-inactive">Day-5</span>
+                                            <span class="tasks-inactive">Day-6</span>
+                                            <span class="tasks-inactive">Day-7</span>
+                                            <span class="tasks-inactive">Day-8</span>
+                                            <span class="tasks-inactive">Day-9</span>
+                                            <span class="tasks-inactive">Day-10</span>
+                                        </div>
+                                    </div>
+                                    <div class="daily-right-col box-challenge">
+                                        <div class="right-col-box">
+                                            21-Day Advanced
+                                            <p>Challenge</p>
+                                            <p>
+                                                <span><img src="assets/img/noun_1097947_cc_arrow.png"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="daily-right-col box-challenge">
+                                        <div class="right-col-box day-31">
+                                            31-Day Ultimate
+                                            <p>Challenge</p>
+                                        </div>
+                                    </div>
+                                    <div class="daily-right-col box-challenge">
+                                        <div class="right-col-box day-31">
+                                            31 Day Be the Best
+                                            <p>Shape of Your Life</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <section class="pre-footer">
+        <div class="container">
+            <div class="row">
+                <div class="fb-comments" data-href="http://dev.walkingcure.com" data-numposts="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--<div class="empty"></div>-->
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="footer__logo">
+                        <img src="assets/img/main/top-logo.png" alt="">
+                    </div>
+                    <div class="social__block">
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-facebook" aria-hidden="true"></i> 
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-center-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">EBOOKS</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="footer-right-list">
+                        <li><a href="#">Need help?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</div> <!--end wrapper-->
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

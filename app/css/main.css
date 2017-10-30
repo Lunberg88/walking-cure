@@ -277,7 +277,7 @@ img {
 .profile-content {
   width: 100%;
   margin: auto; }
-  .profile-content .profile-left-col {
+  .profile-content .profile-left-col, .profile-content .daily-content {
     margin-bottom: 100px;
     background-color: #f3f3f3;
     border-radius: 0 0 5px 5px;
@@ -2815,6 +2815,8 @@ img {
       opacity: 0.7;
       display: flex;
       transform: rotate(90deg); }
+  .mi-logo-section .m-logo-imgs {
+    margin-left: 30px; }
   .mi-logo-section li {
     display: inline-block;
     margin: 0 20px; }
@@ -2827,7 +2829,7 @@ img {
     .mi-logo-section li .mi-logo-img {
       border-radius: 50%;
       background: #fff;
-      padding: 0 10px;
+      padding: 10px 20px;
       box-shadow: 0 8px 8px rgba(66, 66, 66, 0.7); }
     .mi-logo-section li .mi-logo-img .right-img {
       position: relative;
@@ -2856,7 +2858,7 @@ img {
     width: 650px;
     position: absolute;
     top: 20px;
-    margin-left: -200px;
+    margin-left: -170px;
     text-align: center;
     font-weight: bold; }
   .mi-logo-section .mi-logo-imgs {
@@ -2866,7 +2868,7 @@ img {
 .mi-content {
   background: #f7f7f7; }
   .mi-content .mi-content-title {
-    margin: 25px 0;
+    margin: 45px 0;
     text-align: center;
     font-size: 26px;
     font-weight: bold;
@@ -2890,9 +2892,9 @@ img {
     .mi-content .mi-left-content .mi-lc-sm, .mi-content .mi-right-content .mi-lc-sm, .mi-content .mi-left-big .mi-lc-sm, .mi-content .mi-right-small .mi-lc-sm {
       padding: 0 80px; }
     .mi-content .mi-left-content .mi-lc-content, .mi-content .mi-left-content .mi-rc-content, .mi-content .mi-right-content .mi-lc-content, .mi-content .mi-right-content .mi-rc-content, .mi-content .mi-left-big .mi-lc-content, .mi-content .mi-left-big .mi-rc-content, .mi-content .mi-right-small .mi-lc-content, .mi-content .mi-right-small .mi-rc-content {
-      font-size: 14px;
+      font-size: 13px;
       font-family: 'Open Sans';
-      line-height: 13px;
+      line-height: 10px;
       text-align: justify;
       padding: 10px 20px 10px 50px; }
       .mi-content .mi-left-content .mi-lc-content img, .mi-content .mi-left-content .mi-rc-content img, .mi-content .mi-right-content .mi-lc-content img, .mi-content .mi-right-content .mi-rc-content img, .mi-content .mi-left-big .mi-lc-content img, .mi-content .mi-left-big .mi-rc-content img, .mi-content .mi-right-small .mi-lc-content img, .mi-content .mi-right-small .mi-rc-content img {
@@ -2922,6 +2924,94 @@ img {
     .mi-content .mi-bottom-faq button:hover {
       background: #d0d0d0;
       color: #fff; }
+
+.mi-logo-section .mi-logo-img .right-img .i-cash {
+  padding: 10px 20px !important; }
+
+.mi-logo-section .arrow_new {
+  position: relative;
+  bottom: 80px; }
+
+.mi-left-content .weight-off .mi-lc-lt, .mi-left-content .weight-off .mi-lc-rt, .mi-right-content .weight-off .mi-lc-lt, .mi-right-content .weight-off .mi-lc-rt {
+  padding: 0 110px; }
+
+.mi-col-bottom {
+  background: #fff;
+  margin: 20px 0 45px;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 8px 8px rgba(208, 208, 208, 0.4); }
+  .mi-col-bottom .mi-bottom-content {
+    text-align: center; }
+    .mi-col-bottom .mi-bottom-content .mi-bot-title {
+      background: #ff7900;
+      color: #fff;
+      border-radius: 4px;
+      padding: 2px 100px;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+      top: -30px; }
+  .mi-col-bottom .mi-bottom-text {
+    line-height: 10px;
+    padding: 10px 25px;
+    font-size: 13px;
+    color: #2f313e;
+    font-family: 'Open Sans'; }
+    .mi-col-bottom .mi-bottom-text img {
+      padding-right: 20px; }
+
+.mi-misc-content {
+  background: #fff;
+  margin: 0; }
+  .mi-misc-content .mi-misc-text .misc-part1, .mi-misc-content .mi-misc-text .misc-part2 {
+    display: inline-block;
+    padding: 25px 20px;
+    font-size: 13px;
+    line-height: 10px;
+    text-align: justify; }
+  .mi-misc-content .misc-part2 {
+    width: 340px;
+    margin-right: 80px; }
+    .mi-misc-content .misc-part2 img {
+      object-fit: cover;
+      box-shadow: 4px 8px 8px rgba(6, 6, 6, 0.54); }
+
+.mi-misc-box {
+  background: #fff; }
+
+.mi-faq-text .mi-bottom-faq {
+  text-align: center;
+  margin: -10px 0 35px; }
+  .mi-faq-text .mi-bottom-faq .mi-bottom-text {
+    color: #89898E;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans'; }
+  .mi-faq-text .mi-bottom-faq button, .mi-faq-text .mi-bottom-faq button:link, .mi-faq-text .mi-bottom-faq button:visited {
+    border: 1px solid #d0d0d0;
+    color: #89898E;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0 0 0;
+    background: transparent;
+    border-radius: 3px; }
+  .mi-faq-text .mi-bottom-faq button:hover {
+    background: #d0d0d0;
+    color: #fff; }
+
+.mi-bottom-ftext {
+  color: #1e93a2;
+  margin: 0 0 30px 0;
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background: #f7f7f7; }
+
+.mi-faq-text, .weight-off {
+  background: #f7f7f7;
+  padding-top: 50px; }
 
 .menu {
   list-style: none;
@@ -3728,6 +3818,297 @@ img {
 
 .light-bordo {
   color: #d84f6b; }
+
+.main .compete-logo-section {
+  padding: 20px 35px;
+  height: 300px;
+  position: relative;
+  background: linear-gradient(to right, #fff 20%, transparent 70%), url(../assets/img/competition/eldorado_dr.kim_gray_1.jpg) no-repeat center center;
+  background-size: cover; }
+  .main .compete-logo-section .compete-logo-text {
+    position: relative;
+    top: 25px;
+    left: 90px;
+    width: 400px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #2f313e;
+    font-family: 'Open Sans';
+    text-align: center; }
+    .main .compete-logo-section .compete-logo-text img {
+      max-width: 120px; }
+
+.main .compete-menu {
+  padding-right: 25%;
+  padding-left: 0; }
+  .main .compete-menu .menu__item {
+    padding: 15px 0 20px 0; }
+  .main .compete-menu li:last-child {
+    border-right: 1px solid #d7d7d7; }
+
+.main .compete-content {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  padding: 25px 40px; }
+  .main .compete-content .compete-main-content {
+    width: 89%;
+    margin: 10px 100px 5px 0;
+    padding: 20px 40px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 5px 5px rgba(208, 208, 208, 0.4); }
+    .main .compete-content .compete-main-content .compete-games-select img {
+      max-width: 120px;
+      border-radius: 50%;
+      object-fit: cover; }
+    .main .compete-content .compete-main-content .compete-games-desc {
+      margin-top: -20px;
+      text-align: center; }
+      .main .compete-content .compete-main-content .compete-games-desc .games-days {
+        font-size: 12px;
+        margin-top: 40px;
+        text-align: center;
+        padding-right: 40px;
+        font-weight: bold; }
+        .main .compete-content .compete-main-content .compete-games-desc .games-days li {
+          margin-right: 20px; }
+      .main .compete-content .compete-main-content .compete-games-desc .game-select-title {
+        color: #1e93a2;
+        font-weight: bold; }
+      .main .compete-content .compete-main-content .compete-games-desc ul {
+        list-style: none; }
+      .main .compete-content .compete-main-content .compete-games-desc li {
+        display: inline-block; }
+    .main .compete-content .compete-main-content .compete-games-btn {
+      text-align: center;
+      padding-left: 80px; }
+      .main .compete-content .compete-main-content .compete-games-btn .game-btn, .main .compete-content .compete-main-content .compete-games-btn .game-btn:active, .main .compete-content .compete-main-content .compete-games-btn .game-btn:visited {
+        position: relative;
+        top: 50px;
+        background: #d84f6b;
+        color: #fff;
+        padding: 5px 40px;
+        border-radius: 4px;
+        font-weight: bold;
+        text-decoration: none; }
+      .main .compete-content .compete-main-content .compete-games-btn .game-btn:hover {
+        background: #fff;
+        color: #d84f6b;
+        text-decoration: none;
+        border: 1px solid #d84f6b; }
+  .main .compete-content .compete-ctn-btn {
+    margin-left: -100px;
+    margin-top: 15px; }
+    .main .compete-content .compete-ctn-btn .invite-btn:active, .main .compete-content .compete-ctn-btn .invite-btn:visited, .main .compete-content .compete-ctn-btn .invite-btn {
+      background: #ff7900;
+      color: #fff;
+      font-weight: bold;
+      font-size: 12px;
+      font-family: 'Open Sans';
+      padding: 8px 20px;
+      border-radius: 4px;
+      text-decoration: none; }
+      .main .compete-content .compete-ctn-btn .invite-btn:active i, .main .compete-content .compete-ctn-btn .invite-btn:visited i, .main .compete-content .compete-ctn-btn .invite-btn i {
+        padding-right: 3px;
+        padding-bottom: 2px; }
+    .main .compete-content .compete-ctn-btn .invite-btn:hover {
+      background: #fff;
+      color: #ff7900;
+      text-decoration: none;
+      border: 1px solid #ff7900; }
+
+.charts-block span {
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+
+.daily-tasks-section {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 45px;
+  margin-left: -15px; }
+  .daily-tasks-section .daily-main-col, .daily-tasks-section .daily-right-col {
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    text-align: center; }
+    .daily-tasks-section .daily-main-col .content-task-title, .daily-tasks-section .daily-right-col .content-task-title {
+      margin: 20px auto;
+      font-size: 15px;
+      color: #1e93a2;
+      font-weight: bold; }
+      .daily-tasks-section .daily-main-col .content-task-title .task-title-big, .daily-tasks-section .daily-right-col .content-task-title .task-title-big {
+        color: #d84f6b;
+        font-size: 46px;
+        font-family: 'Open Sans'; }
+    .daily-tasks-section .daily-main-col .daily-video-title, .daily-tasks-section .daily-right-col .daily-video-title {
+      background: #f3f3f3;
+      margin: 10px 15px 0;
+      padding: 10px 10px;
+      text-align: center;
+      font-size: 24px;
+      color: #2f313e;
+      font-family: 'Open Sans';
+      font-weight: bold;
+      line-height: 45px; }
+    .daily-tasks-section .daily-main-col .daily-video-content, .daily-tasks-section .daily-right-col .daily-video-content {
+      padding: 0px 15px; }
+      .daily-tasks-section .daily-main-col .daily-video-content .daily-frame, .daily-tasks-section .daily-right-col .daily-video-content .daily-frame {
+        width: 94%; }
+      .daily-tasks-section .daily-main-col .daily-video-content img, .daily-tasks-section .daily-right-col .daily-video-content img {
+        height: 300px;
+        object-fit: cover; }
+    .daily-tasks-section .daily-main-col .daily-challenge-title, .daily-tasks-section .daily-right-col .daily-challenge-title {
+      width: 94%;
+      margin: auto;
+      padding: 5px 10px;
+      font-family: 'Open Sans'; }
+      .daily-tasks-section .daily-main-col .daily-challenge-title h3, .daily-tasks-section .daily-right-col .daily-challenge-title h3 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #2f313e;
+        text-align: left; }
+    .daily-tasks-section .daily-main-col .daily-challenge-text, .daily-tasks-section .daily-right-col .daily-challenge-text {
+      font-size: 12px;
+      line-height: 15px;
+      text-align: left; }
+      .daily-tasks-section .daily-main-col .daily-challenge-text ul, .daily-tasks-section .daily-right-col .daily-challenge-text ul {
+        margin-top: 20px;
+        list-style: none; }
+        .daily-tasks-section .daily-main-col .daily-challenge-text ul li, .daily-tasks-section .daily-right-col .daily-challenge-text ul li {
+          display: inline-block; }
+        .daily-tasks-section .daily-main-col .daily-challenge-text ul li:last-child, .daily-tasks-section .daily-right-col .daily-challenge-text ul li:last-child {
+          position: relative;
+          right: -140px;
+          margin-right: -40px; }
+      .daily-tasks-section .daily-main-col .daily-challenge-text ul:last-child, .daily-tasks-section .daily-right-col .daily-challenge-text ul:last-child {
+        margin: 5px 5px 30px;
+        position: relative;
+        right: -400px; }
+        .daily-tasks-section .daily-main-col .daily-challenge-text ul:last-child li, .daily-tasks-section .daily-right-col .daily-challenge-text ul:last-child li {
+          display: list-item; }
+      .daily-tasks-section .daily-main-col .daily-challenge-text .ender-text, .daily-tasks-section .daily-right-col .daily-challenge-text .ender-text {
+        text-align: right;
+        font-weight: bold;
+        font-size: 13px;
+        margin: 10px 0 35px; }
+    .daily-tasks-section .daily-main-col .daily-task-box, .daily-tasks-section .daily-right-col .daily-task-box {
+      margin: 0 15px;
+      padding: 40px 30px;
+      background: url("../assets/img/daily_task/NEWFEEL_2016_SOFT_140_0393.png") no-repeat;
+      background-size: cover; }
+      .daily-tasks-section .daily-main-col .daily-task-box .tasks-pics, .daily-tasks-section .daily-right-col .daily-task-box .tasks-pics {
+        object-fit: cover;
+        padding: 5px 10px;
+        width: 250px;
+        height: 180px;
+        border-radius: 13px; }
+      .daily-tasks-section .daily-main-col .daily-task-box .bottom-task-box, .daily-tasks-section .daily-right-col .daily-task-box .bottom-task-box {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #2f313e; }
+        .daily-tasks-section .daily-main-col .daily-task-box .bottom-task-box .points-title, .daily-tasks-section .daily-right-col .daily-task-box .bottom-task-box .points-title {
+          color: #d84f6b; }
+      .daily-tasks-section .daily-main-col .daily-task-box .right-comment, .daily-tasks-section .daily-right-col .daily-task-box .right-comment {
+        text-align: center !important;
+        margin: 30px auto; }
+      .daily-tasks-section .daily-main-col .daily-task-box .right-line, .daily-tasks-section .daily-right-col .daily-task-box .right-line {
+        line-height: 20px; }
+      .daily-tasks-section .daily-main-col .daily-task-box .block-list-style, .daily-tasks-section .daily-right-col .daily-task-box .block-list-style {
+        padding: 5px 20px; }
+        .daily-tasks-section .daily-main-col .daily-task-box .block-list-style .left-list-style, .daily-tasks-section .daily-main-col .daily-task-box .block-list-style .right-list-style, .daily-tasks-section .daily-right-col .daily-task-box .block-list-style .left-list-style, .daily-tasks-section .daily-right-col .daily-task-box .block-list-style .right-list-style {
+          display: inline-block;
+          font-weight: bold;
+          margin: 20px auto 0;
+          float: left; }
+        .daily-tasks-section .daily-main-col .daily-task-box .block-list-style .right-list-style, .daily-tasks-section .daily-right-col .daily-task-box .block-list-style .right-list-style {
+          color: #d84f6b;
+          float: right; }
+      .daily-tasks-section .daily-main-col .daily-task-box .block-list-comment, .daily-tasks-section .daily-right-col .daily-task-box .block-list-comment {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 10px; }
+      .daily-tasks-section .daily-main-col .daily-task-box .block-list, .daily-tasks-section .daily-right-col .daily-task-box .block-list {
+        font-size: 13px;
+        padding: 3px 5px;
+        text-align: left;
+        line-height: 25px; }
+        .daily-tasks-section .daily-main-col .daily-task-box .block-list ul, .daily-tasks-section .daily-right-col .daily-task-box .block-list ul {
+          margin: 10px 15px; }
+          .daily-tasks-section .daily-main-col .daily-task-box .block-list ul .li-points, .daily-tasks-section .daily-right-col .daily-task-box .block-list ul .li-points {
+            position: relative;
+            float: right;
+            color: #d84f6b;
+            font-weight: bold;
+            right: 10px; }
+      .daily-tasks-section .daily-main-col .daily-task-box .vertical-line, .daily-tasks-section .daily-right-col .daily-task-box .vertical-line {
+        content: " ";
+        display: block;
+        background: url("../assets/img/daily_task/vertical-align-arrow.png") no-repeat; }
+      .daily-tasks-section .daily-main-col .daily-task-box .share-btn, .daily-tasks-section .daily-right-col .daily-task-box .share-btn {
+        margin: 40px auto 20px; }
+        .daily-tasks-section .daily-main-col .daily-task-box .share-btn .bottom-box-btn, .daily-tasks-section .daily-main-col .daily-task-box .share-btn .bottom-box-btn:visited, .daily-tasks-section .daily-main-col .daily-task-box .share-btn .bottom-box-btn:link, .daily-tasks-section .daily-right-col .daily-task-box .share-btn .bottom-box-btn, .daily-tasks-section .daily-right-col .daily-task-box .share-btn .bottom-box-btn:visited, .daily-tasks-section .daily-right-col .daily-task-box .share-btn .bottom-box-btn:link {
+          color: #fff;
+          background: #d84f6b;
+          padding: 20px 50px;
+          border-radius: 3px;
+          font-size: 14px;
+          font-family: 'Open Sans';
+          font-weight: bold;
+          text-decoration: none; }
+        .daily-tasks-section .daily-main-col .daily-task-box .share-btn .bottom-box-btn:hover, .daily-tasks-section .daily-right-col .daily-task-box .share-btn .bottom-box-btn:hover {
+          color: #d84f6b;
+          background: #fff;
+          border: 1px solid #d84f6b;
+          text-decoration: none; }
+  .daily-tasks-section .daily-right-col .right-col-box {
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8c8c8c;
+    padding: 20px 5px 0; }
+    .daily-tasks-section .daily-right-col .right-col-box .right-title-arrow {
+      transform: rotate(180deg);
+      width: 20px;
+      opacity: 0.5;
+      cursor: pointer; }
+  .daily-tasks-section .daily-right-col .day-31 {
+    color: #b9b9b9; }
+    .daily-tasks-section .daily-right-col .day-31 p {
+      padding-bottom: 15px; }
+  .daily-tasks-section .daily-right-col .right-col-days .tasks-inactive, .daily-tasks-section .daily-right-col .right-col-days .tasks-active {
+    display: list-item;
+    list-style: none;
+    margin: 15px auto 10px;
+    font-size: 11px;
+    font-weight: bold; }
+  .daily-tasks-section .daily-right-col .right-col-days .tasks-active:first-child, .daily-tasks-section .daily-right-col .right-col-days .tasks-inactive:first-child {
+    margin-top: 25px; }
+  .daily-tasks-section .daily-right-col .right-col-days .tasks-active:last-child, .daily-tasks-section .daily-right-col .right-col-days .tasks-inactive:last-child {
+    margin-bottom: 35px;
+    padding-left: 5px; }
+  .daily-tasks-section .daily-right-col .right-col-days .tasks-active {
+    background: #f3f3f3;
+    color: #1e93a2;
+    padding: 5px 0; }
+  .daily-tasks-section .box-challenge {
+    margin-top: 25px;
+    border-bottom: 0;
+    font-family: 'Open Sans'; }
+    .daily-tasks-section .box-challenge img {
+      margin: 0;
+      width: 20px;
+      opacity: 0.5; }
+
+.pre-footer {
+  width: 100%;
+  margin: 10px auto 0;
+  padding: 10px 30px;
+  background: #fff; }
 
 .light-bordo {
   color: #d84f6b; }

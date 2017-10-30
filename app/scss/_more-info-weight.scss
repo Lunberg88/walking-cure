@@ -1,0 +1,130 @@
+.mi-logo-section {
+  .mi-logo-img .right-img .i-cash {
+    padding: 10px 20px !important;
+  }
+
+  .arrow_new {
+    position: relative;
+    bottom: 80px;
+  }
+}
+
+.mi-left-content, .mi-right-content {
+  .weight-off {
+      .mi-lc-lt, .mi-lc-rt {
+        padding: 0 110px;
+      }
+  }
+}
+
+.mi-right-content {
+
+}
+
+.mi-col-bottom {
+  background: #fff;
+  margin: 20px 0 45px;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 8px 8px rgba(208, 208, 208, 0.4);
+
+  .mi-bottom-content {
+    text-align: center;
+
+    .mi-bot-title {
+      background: #ff7900;
+      color: #fff;
+      border-radius: 4px;
+      padding: 2px 100px;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+      top: -30px;
+    }
+  }
+
+  .mi-bottom-text {
+    line-height: 10px;
+    padding: 10px 25px;
+    font-size: 13px;
+    color: #2f313e;
+    font-family: 'Open Sans';
+
+    img {
+      padding-right: 20px;
+    }
+  }
+}
+
+.mi-misc-content {
+  background: #fff;
+  margin: 0;
+
+  .mi-misc-text {
+    .misc-part1, .misc-part2 {
+      display: inline-block;
+      padding: 25px 20px;
+      font-size: 13px;
+      line-height: 10px;
+      text-align: justify;
+    }
+  }
+
+  .misc-part2 {
+    width: 340px;
+    margin-right: 80px;
+    img {
+      object-fit: cover;
+      box-shadow: 4px 8px 8px rgba(6, 6, 6, 0.54);
+    }
+  }
+}
+
+.mi-misc-box {
+  background: #fff;
+}
+
+.mi-faq-text {
+  .mi-bottom-faq {
+    text-align: center;
+    margin: -10px 0 35px;
+
+    .mi-bottom-text {
+      color: #89898E;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Open Sans';
+    }
+
+    button, button:link, button:visited {
+      border: 1px solid #d0d0d0;
+      color: #89898E;
+      padding: 8px 25px;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 15px 0 0 0;
+      background: transparent;
+      border-radius: 3px;
+    }
+
+    button:hover {
+      background: #d0d0d0;
+      color: #fff;
+    }
+  }
+}
+
+.mi-bottom-ftext {
+  color: #1e93a2;
+  margin:0 0 30px 0;
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background: #f7f7f7;
+}
+
+.mi-faq-text, .weight-off {
+  background: #f7f7f7;
+  padding-top: 50px;
+}
+

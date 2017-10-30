@@ -1,72 +1,152 @@
-/** Competition **/
-.compete-bg {
-  //height: 270px;
-  background: linear-gradient(to right, #fff 30%, transparent 70%), url('../assets/img/competition/eldorado_dr.kim_gray.jpg');
-  background-size: cover;
-}
+.main {
 
-.compete-body {
-  margin-top: -14px;
-}
+  .compete-logo-section {
+    padding: 20px 35px;
+    height: 300px;
+    position: relative;
+    background: linear-gradient(to right, #fff 20%, transparent 70%), url(../assets/img/competition/eldorado_dr.kim_gray_1.jpg) no-repeat center center;
+    background-size: cover;
 
-.compete-logo {
-  max-width: 500px;
-  position: relative;
-  top: -120px;
-  right: 40px;
-  float: right;
-  border: 0;
+    .compete-logo-text {
+      position: relative;
+      top: 25px;
+      left: 90px;
+      width: 400px;
+      font-size: 38px;
+      font-weight: bold;
+      color: #2f313e;
+      font-family: 'Open Sans';
+      text-align: center;
 
-  img {
-    max-width: 120px;
-    margin-left: 100px;
+      img {
+        max-width: 120px;
+      }
+    }
   }
 
-  .compete-logo-text {
-    text-align: center;
-    font-size: 45px;
-    color: rgb(47,49,62);
-    font-family: "OpenSans-Bold", Arial;
-    font-weight: bold;
-  }
-}
+  .compete-menu {
+    padding-right: 25%;
+    padding-left: 0;
 
-.menu-horizontal {
-  padding-left: 0;
-  padding-right: 20%;
-}
-
-.compete-body {
-  width: 100%;
-  margin: auto;
-  background: #fff;
-  border: 1px solid #d7d7d7;
-  padding: 20px 30px;
-  border-radius: 2px;
-
-  .compete-body {
-
-  }
-
-  .compete_invite_btn {
-    font-size: 14px;
-    font-family: 'OpenSans-Bold', Arial;
-    font-weight: 700;
-
-    a, a:active, a:link, a:visited {
-      padding: 12px 20px;
-      text-decoration: none;
-      color: #fff;
-      background: #ff7900;
-      border-radius: 2px;
+    .menu__item {
+      padding: 15px 0 20px 0;
     }
 
-    a:hover {
-      text-decoration: none;
-      color: #ff7900;
-      background: #fff;
-      border: 1px solid #ff7900;
+    li:last-child {
+      border-right: 1px solid #d7d7d7;
+    }
+  }
+
+  .compete-content {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 25px 40px;
+
+    .compete-underline {
+      //margin: auto;
+      //border-bottom: 1px solid #d7d7d7;
     }
 
+    .compete-main-content {
+      width: 89%;
+      margin: 10px 100px 5px 0;
+      padding: 20px 40px;
+      border: 1px solid #d3d3d3;
+      box-shadow: 0 5px 5px rgba(208, 208, 208, 0.4);
+
+      .compete-games-select {
+
+        img {
+          max-width: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .compete-games-desc {
+        margin-top: -20px;
+        text-align: center;
+
+        .games-days {
+          font-size: 12px;
+          margin-top: 40px;
+          text-align: center;
+          padding-right: 40px;
+          font-weight: bold;
+
+          li {
+            margin-right: 20px;
+          }
+        }
+
+        .game-select-title {
+          color: #1e93a2;
+          font-weight: bold;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        li {
+          display: inline-block;
+        }
+      }
+
+      .compete-games-btn {
+        text-align: center;
+        padding-left: 80px;
+
+        .game-btn, .game-btn:active, .game-btn:visited {
+          position: relative;
+          top: 50px;
+          background: #d84f6b;
+          color: #fff;
+          padding: 5px 40px;
+          border-radius: 4px;
+          font-weight: bold;
+          text-decoration: none;
+        }
+
+        .game-btn:hover {
+          background: #fff;
+          color: #d84f6b;
+          text-decoration: none;
+          border: 1px solid #d84f6b;
+        }
+      }
+    }
+
+    .compete-ctn-btn {
+      margin-left: -100px;
+      margin-top: 15px;
+
+      .invite-btn:active, .invite-btn:visited, .invite-btn {
+        background: #ff7900;
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: 'Open Sans';
+        padding: 8px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+
+        i {
+          padding-right: 3px;
+          padding-bottom: 2px;
+        }
+      }
+
+      .invite-btn:hover {
+        background: #fff;
+        color: #ff7900;
+        text-decoration: none;
+        border: 1px solid #ff7900;
+      }
+    }
   }
+
 }

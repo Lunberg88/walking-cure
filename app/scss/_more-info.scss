@@ -22,6 +22,10 @@
     }
   }
 
+  .m-logo-imgs {
+    margin-left: 30px;
+  }
+
   li {
     display: inline-block;
     margin: 0 20px;
@@ -37,7 +41,7 @@
     .mi-logo-img {
       border-radius: 50%;
       background: #fff;
-      padding: 0 10px;
+      padding: 10px 20px;
       box-shadow: 0 8px 8px rgba(66, 66, 66, 0.7);
     }
 
@@ -125,7 +129,7 @@
     width: 650px;
     position: absolute;
     top: 20px;
-    margin-left: -200px;
+    margin-left: -170px;
     text-align: center;
     font-weight: bold;
   }
@@ -140,7 +144,7 @@
   background: #f7f7f7;
 
   .mi-content-title {
-    margin: 25px 0;
+    margin: 45px 0;
     text-align: center;
     font-size: 26px;
     font-weight: bold;
@@ -171,9 +175,9 @@
     }
 
     .mi-lc-content, .mi-rc-content {
-      font-size: 14px;
+      font-size: 13px;
       font-family: 'Open Sans';
-      line-height: 13px;
+      line-height: 10px;
       text-align: justify;
       padding: 10px 20px 10px 50px;
 

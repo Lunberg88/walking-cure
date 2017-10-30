@@ -1,0 +1,166 @@
+.mi-logo-section {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 460px;
+  margin-top: -15px;
+  background: url("../assets/img/more_info/eldorado_dr.png") no-repeat top;
+  background-position-y: 25%;
+  background-size: cover;
+  /* .mi-logo-imgs {
+    ul {
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    .mi-logo-img {
+      //max-width: 170px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 8px 8px rgba(66, 66, 66, 0.7);
+    }
+
+    .mi-logo-img-gr {
+      position: relative;
+      left: -50px;
+      background: #fff;
+      border-radius: 80px;
+      padding: 10px 40px;
+      box-shadow: 0 8px 8px rgba(66, 66, 66, 0.7);
+    }
+
+    .arrow {
+      width: 140px;
+      opacity: 0.7;
+      display: flex;
+      transform: rotate(90deg);
+    }
+
+    .mi-img-titles {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2f313e;
+      padding-top: 10px;
+      text-align: center;
+    }
+  } */ }
+  .mi-logo-section ul {
+    list-style: none;
+    position: relative;
+    bottom: -220px;
+    right: -10px; }
+    .mi-logo-section ul .arrow {
+      width: 140px;
+      opacity: 0.7;
+      display: flex;
+      transform: rotate(90deg); }
+  .mi-logo-section li {
+    display: inline-block;
+    margin: 0 20px; }
+    .mi-logo-section li .mi-img-titles {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2f313e;
+      padding-top: 10px;
+      text-align: center; }
+    .mi-logo-section li .mi-logo-img {
+      border-radius: 50%;
+      background: #fff;
+      padding: 0 10px;
+      box-shadow: 0 8px 8px rgba(66, 66, 66, 0.7); }
+    .mi-logo-section li .mi-logo-img .right-img {
+      position: relative;
+      bottom: 70px;
+      padding: 10px 30px; }
+    .mi-logo-section li .mi-logo-img-gr {
+      background: #fff;
+      max-width: 250px;
+      border-radius: 80px;
+      padding: 10px 40px;
+      box-shadow: 0 8px 8px rgba(66, 66, 66, 0.7); }
+    .mi-logo-section li img {
+      max-width: 120px; }
+  .mi-logo-section .mi-logo-title1, .mi-logo-section .mi-logo-title2 {
+    font-size: 32px;
+    font-family: 'Open Sans';
+    color: #2f313e; }
+  .mi-logo-section .mi-logo-title2 {
+    font-size: 20px; }
+  .mi-logo-section .mi-logo-text {
+    font-size: 46px;
+    color: #d84f6b; }
+  .mi-logo-section .mi-logo-small {
+    font-size: 16px; }
+  .mi-logo-section .mi-logo-txt {
+    width: 650px;
+    position: absolute;
+    top: 20px;
+    margin-left: -200px;
+    text-align: center;
+    font-weight: bold; }
+  .mi-logo-section .mi-logo-imgs {
+    position: relative;
+    bottom: -220px; }
+
+.mi-content {
+  background: #f7f7f7; }
+  .mi-content .mi-content-title {
+    margin: 25px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2f313e; }
+  .mi-content .mi-left-content, .mi-content .mi-right-content, .mi-content .mi-left-big, .mi-content .mi-right-small {
+    background: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    box-shadow: 0 8px 8px rgba(208, 208, 208, 0.4); }
+    .mi-content .mi-left-content .mi-lc-lt, .mi-content .mi-left-content .mi-lc-rt, .mi-content .mi-left-content .mi-lc-sm, .mi-content .mi-right-content .mi-lc-lt, .mi-content .mi-right-content .mi-lc-rt, .mi-content .mi-right-content .mi-lc-sm, .mi-content .mi-left-big .mi-lc-lt, .mi-content .mi-left-big .mi-lc-rt, .mi-content .mi-left-big .mi-lc-sm, .mi-content .mi-right-small .mi-lc-lt, .mi-content .mi-right-small .mi-lc-rt, .mi-content .mi-right-small .mi-lc-sm {
+      position: relative;
+      bottom: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      background: #1e93a2;
+      color: #fff;
+      border-radius: 4px;
+      padding: 0 170px; }
+    .mi-content .mi-left-content .mi-lc-sm, .mi-content .mi-right-content .mi-lc-sm, .mi-content .mi-left-big .mi-lc-sm, .mi-content .mi-right-small .mi-lc-sm {
+      padding: 0 80px; }
+    .mi-content .mi-left-content .mi-lc-content, .mi-content .mi-left-content .mi-rc-content, .mi-content .mi-right-content .mi-lc-content, .mi-content .mi-right-content .mi-rc-content, .mi-content .mi-left-big .mi-lc-content, .mi-content .mi-left-big .mi-rc-content, .mi-content .mi-right-small .mi-lc-content, .mi-content .mi-right-small .mi-rc-content {
+      font-size: 14px;
+      font-family: 'Open Sans';
+      line-height: 13px;
+      text-align: justify;
+      padding: 10px 20px 10px 50px; }
+      .mi-content .mi-left-content .mi-lc-content img, .mi-content .mi-left-content .mi-rc-content img, .mi-content .mi-right-content .mi-lc-content img, .mi-content .mi-right-content .mi-rc-content img, .mi-content .mi-left-big .mi-lc-content img, .mi-content .mi-left-big .mi-rc-content img, .mi-content .mi-right-small .mi-lc-content img, .mi-content .mi-right-small .mi-rc-content img {
+        padding: 5px 15px 10px; }
+      .mi-content .mi-left-content .mi-lc-content .mi-content-img, .mi-content .mi-left-content .mi-rc-content .mi-content-img, .mi-content .mi-right-content .mi-lc-content .mi-content-img, .mi-content .mi-right-content .mi-rc-content .mi-content-img, .mi-content .mi-left-big .mi-lc-content .mi-content-img, .mi-content .mi-left-big .mi-rc-content .mi-content-img, .mi-content .mi-right-small .mi-lc-content .mi-content-img, .mi-content .mi-right-small .mi-rc-content .mi-content-img {
+        bottom: -10px;
+        position: relative; }
+    .mi-content .mi-left-content .mi-lc-rt, .mi-content .mi-right-content .mi-lc-rt, .mi-content .mi-left-big .mi-lc-rt, .mi-content .mi-right-small .mi-lc-rt {
+      background: #d84f6b; }
+  .mi-content .mi-bottom-faq {
+    text-align: center;
+    margin: -10px 0 35px; }
+    .mi-content .mi-bottom-faq .mi-bottom-text {
+      color: #89898E;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Open Sans'; }
+    .mi-content .mi-bottom-faq button, .mi-content .mi-bottom-faq button:link, .mi-content .mi-bottom-faq button:visited {
+      border: 1px solid #d0d0d0;
+      color: #89898E;
+      padding: 8px 25px;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 15px 0 0 0;
+      background: transparent;
+      border-radius: 3px; }
+    .mi-content .mi-bottom-faq button:hover {
+      background: #d0d0d0;
+      color: #fff; }
